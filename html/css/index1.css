@@ -1,0 +1,11 @@
+/* Reset some default styling */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+	.logo {
+    width: 100px;
+    height: auto;
+    margin: 10px; /* Adjust margin as needed */
+}

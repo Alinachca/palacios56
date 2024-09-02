@@ -1,0 +1,2962 @@
+body {   
+    background-color: #242323;
+    color: #ffffff; /* Text color */   
+    font-family: Arial, sans-serif;
+}
+header, nav, section, footer {
+    padding: 20px;
+}
+header h1, footer p {
+    text-align: center;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff; /* Link color */
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+header h1 {
+    font-size: 21px; /* Adjust the font size as needed */
+}
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Это предотвратит горизонтальную прокрутку */
+}
+
+.main-container {
+    width: 800px; /* Установите фиксированную ширину для основного контейнера */
+    margin: 0 auto; /* Центрирует контейнер по горизонтали */
+    padding: 0 20px; /* Внутренние отступы (опционально) */
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    margin: 10px; /* Adjust margin as needed */
+    position: absolute;
+    top: 35px;
+    right  : 530px;
+}
+
+
+.centered-image {
+    width: 70%; /* Заменяем максимальную ширину на конкретное значение, чтобы увеличить изображение */
+    height: auto; /* Сохраняем пропорции изображения */
+    display: block;
+    margin: auto;
+}
+.about-section {
+    text-align: center; /* Выравниваем текст по центру в секции */
+}
+.centered-content {
+    max-width: 950px;
+    margin: 0 auto;
+}
+.testimonial-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.testimonial-buttons .button {
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    outline: 2px solid #b3a59d ;
+    outline-offset: 0px;
+    background: #b3a59d ;
+    border: 0;
+    font-weight: bolder;
+    color: white;
+    transition: all .1s ease-in-out;
+    cursor: pointer;
+}
+.testimonial-buttons .button:hover {
+    outline-offset: 3px;
+    outline: 3px solid #b3a59d;
+}
+
+ .language-buttons {
+    display: flex;
+    justify-content: flex-end; /* Выравнивание кнопок по правому краю */
+    padding: -5px;
+  
+}
+.language-buttons button {
+    font-size: 14px;
+    color: #e1e1e1;
+    font-family: inherit;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+ 
+}
+
+.language-buttons button:focus,
+.language-buttons button:hover {
+    color: #fff;
+}
+
+.language-buttons button:focus:after,
+.language-buttons button:hover:after {
+    width: 100%;
+    left: 0%;
+}
+        .language-buttons button:after {
+            content: "";
+            pointer-events: none;
+            bottom: -10px;
+            left: 50%;
+            position: absolute;
+            width: 0%;
+            height: 2px;
+            background-color: #fff;
+            transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+            transition-duration: 400ms;
+            transition-property: width, left;
+        }
+.language-buttons {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            top: 35px;
+            right: 765px;
+        }
+
+ .button {
+            font-size: 12px; /* Уменьшение размера шрифта */
+            padding: 8px 15px; /* Уменьшение размера кнопки */
+            border-radius: 5px;
+            outline: 2px solid #938676;
+            outline-offset: 0px;
+            background: #938676;
+            border: 0;
+            font-weight: bolder;
+            color: white;
+            transition: all .1s ease-in-out;
+            cursor: pointer;
+			margin: -155px; /* Коррекция отступа */
+			margin-right: 10px; /* Добавлен отступ справа */
+			  
+			
+			
+        }
+        .button:hover {
+            outline-offset: 3px;
+            outline: 3px solid #938676;
+			
+        }
+
+       
+.centered-buttons {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end; /* Выровнять кнопки по правой стороне */
+            width: 100%;
+            padding-right: 200px; /* Добавить отступ справа */
+
+        
+}
+        
+
+
+    .about-section p {
+        text-align: left;
+        width: 100%;
+        margin: 10px 0;
+        padding-right: 20px;
+    }
+   .about-section p {
+    text-align: left; /* Выравниваем текст по левому краю */
+    width: 100%; /* Устанавливаем ширину для выравнивания по столбцам */
+    margin: 10px 0; /* Добавляем отступы сверху и снизу между параграфами */
+	padding-right: 20px; /* Сдвигаем текст вправо на 20px */
+}
+   .about-section p {
+    text-align: left; /* Выравниваем текст по левому краю */
+    width: 100%; /* Устанавливаем ширину для выравнивания по столбцам */
+    margin: 10px 0; /* Добавляем отступы сверху и снизу между параграфами */
+	padding-right: 20px; /* Сдвигаем текст вправо на 20px */
+}
+
+	.menu {
+            display: flex; /* Use flexbox */
+            justify-content: center; /* Center items horizontally */
+            list-style-type: none;
+            padding: 0;
+        }
+        .menu li {
+            margin: 0 5px; /* Add space between menu items */
+        }
+        .menu button {
+            font-size: 16px;
+            color: #e1e1e1;
+            font-family: inherit;
+            font-weight: 100;
+            cursor: pointer;
+            position: relative;
+            border: none;
+            background: none;
+            text-transform: uppercase;
+            transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+            transition-duration: 400ms;
+            transition-property: color;
+        }
+        .menu button:focus,
+        .menu button:hover {
+            color: #fff;
+        }
+        .menu button:focus:after,
+        .menu button:hover:after {
+            width: 100%;
+            left: 0%;
+        }
+        .menu button:after {
+            content: "";
+            pointer-events: none;
+            bottom: -2px;
+            left: 50%;
+            position: absolute;
+            width: 0%;
+            height: 2px;
+            background-color: #fff;
+            transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+            transition-duration: 400ms;
+            transition-property: width, left;
+        }
+
+		
+
+.text-container {
+            display: flex;
+            justify-content: center; /* Центрируем содержимое по горизонтали */
+            padding-left: 1px;/* Добавляем отступ справа */
+        }
+        .text {
+            max-width: 600px; /* Ограничиваем ширину блока текста */
+            text-align: center;
+        }
+.text {
+    max-width: 600px; /* Ограничиваем ширину блока текста */
+    text-align: center;
+    padding-left: 100px; /* Добавляем отступ слева */
+}
+/* Основной текст */
+.text p {
+    margin-bottom: 5px; /* Устанавливаем небольшой отступ снизу для каждой строки текста */
+    line-height: 0.6; /* Устанавливаем меньшее расстояние между строками */
+}
+.underline {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 10px; /* Добавляем небольшой отступ снизу */
+}
+.footer-text {
+    text-align: left; /* Выравниваем текст по левому краю */
+    padding-left: 1px; /* Добавляем отступ слева */
+}
+.footer-text-column p {
+    text-align: left; /* Выравниваем текст по левому краю */
+}
+.footer-text-column {
+	text-align: center; /* Выравниваем текст внутри контейнера по центру */
+    margin-top: 12px; /* Добавляем немного отступа сверху */
+    padding-left: 20px; /* Добавляем отступ слева */
+    padding-right: 150px; /* Добавляем отступ справа */
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-content {
+    display: flex;
+    flex-direction: row;
+}
+.property-info {
+    text-align: justify;
+    margin-top: 10px;
+    padding-left: 140px; /* Добавляем отступ слева */
+}
+.footer-text-column {
+    padding-right: 1px; /* Добавляем отступ вправо */
+}
+  .footer-text {
+            color: #fff; /* Белый цвет текста */
+            font-weight: bold; /* Жирный шрифт */
+            font-size: 16px;
+            margin: 10px 0;
+        }
+	footer p {
+    margin-bottom: 5px; /* Устанавливаем небольшой отступ снизу */
+    line-height: 0.6; /* Устанавливаем расстояние между строками */
+}
+
+ .underline {
+    font-weight:  bold; /* Делает текст жирным */
+}
+
+.chocolate-classical-sans-regular {
+  font-family: "Chocolate Classical Sans", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+	p, h2, h1,h3{	
+ font-family: "Chocolate Classical Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.centered {
+    font-weight:  bold; /* Делает текст жирным */
+}
+.bottom-image {
+    display: flex;
+    justify-content: center; /* Центрируем содержимое по горизонтали */
+    align-items: center; /* Центрируем содержимое по вертикали */
+    height: 140px; /* Задаем высоту для секции, чтобы изображение не было слишком растянутым */
+}
+.image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        .image-gallery img {
+            width: 30%;
+            height: auto;
+        }
+
+.image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        .image-gallery img {
+            width: 30%;
+            height: auto;
+        }
+.image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        .image-gallery img {
+            width: 30%;
+            height: auto;
+        }
+
+/* Стили для кнопок */
+button {
+    margin: 10px;
+}
+
+		
+	
+	 	
+		
+	 /* Вставьте стили прямо сюда, если не хотите использовать отдельный файл CSS */
+        .testimonial-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 20px;
+        }
+
+        .testimonial {
+            border: 1px solid #ddd; /* Рамка вокруг блока отзывов (менее заметная) */
+            padding: 15px; /* Внутренние отступы */
+            text-align: center; /* Центрируем текст внутри блока */
+            width: 80%; /* Ограничиваем ширину блока */
+            max-width: 600px; /* Максимальная ширина блока */
+            margin: 0 auto; /* Центрируем блок по горизонтали */
+            border-radius: 8px; /* Скругление углов блока */
+            background-color: transparent; /* Убираем фон блока */
+        }
+
+        .testimonial p {
+            font-size: 14px; /* Уменьшение размера шрифта */
+            margin-bottom: 1em; /* Отступ между текстом и кнопками */
+            color: #fff; /* Цвет текста */
+        }
+
+        .testimonial button {
+            font-size: 12px; /* Размер шрифта кнопок */
+            padding: 5px 10px; /* Внутренние отступы кнопок */
+            border: 1px solid #b3a59d; /* Рамка кнопок */
+            border-radius: 5px; /* Скругление углов кнопок */
+            background-color: #b3a59d; /* Цвет фона кнопок */
+            color: white; /* Цвет текста кнопок */
+            cursor: pointer; /* Курсор руки при наведении */
+            transition: background-color 0.3s, border-color 0.3s; /* Плавные переходы для фона и рамки */
+            margin: 0 10px; /* Отступ между кнопками */
+        }
+
+        .testimonial button:hover {
+            background-color: #a29b88; /* Цвет фона кнопок при наведении */
+            border-color: #a29b88; /* Цвет рамки кнопок при наведении */
+        }
+		
+		
+    .large-text {
+    font-size: 1em; /* Здесь вы можете установить любой желаемый размер шрифта */
+} 	
+    
+/* Стиль для текста "CONTACTOS" */
+.contact-text {
+   
+   
+	 font-size: 15px; /* Размер шрифта текста */
+    color: #AF9562; /* Цвет шрифта текста */
+    margin-left: -1390px; /* Отступ справа от текста "NUESTRA EMPRESA" */
+	 position: relative;
+    top: -10px; /* Смещение текста вверх (регулируйте по необходимости) */
+}
+
+
+
+/* Обертка для иконок */
+.wrapper {
+    display: inline-flex;
+    list-style: none;
+    justify-content: center;
+    gap: 10px; /* Уменьшение расстояния между иконками */
+    padding: 0;
+	 margin-left: -140px; /* Отступ справа от текста "NUESTRA EMPRESA" */
+			 position: relative;
+             top: 50px; /* Смещение текста вверх (регулируйте по необходимости) */
+}
+
+/* Стили для иконок */
+.wrapper .icon {
+    position: relative;
+    background: #fff;
+    border-radius: 50%;
+    width: 40px; /* Уменьшение ширины кнопок */
+    height: 40px; /* Уменьшение высоты кнопок */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Стили для всплывающих подсказок */
+.wrapper .tooltip {
+    position: absolute;
+    top: -30px; /* Расположение подсказки над иконкой */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px; /* Уменьшение размера шрифта подсказки */
+    background: #fff;
+    color: #333;
+    padding: 4px 6px;
+    border-radius: 5px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* Стиль для стрелочек подсказки */
+.wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 6px;
+    width: 6px;
+    background: #fff;
+    bottom: -3px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+   .wrapper .icon:hover .tooltip {
+            top: -45px;
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+        }
+
+        .wrapper .icon:hover span,
+        .wrapper .icon:hover .tooltip {
+            text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+        }
+
+        .wrapper .whatsapp:hover,
+        .wrapper .whatsapp:hover .tooltip,
+        .wrapper .whatsapp:hover .tooltip::before {
+            background: #25d366;
+            color: #fff;
+        }
+
+        .wrapper .telegram:hover,
+        .wrapper .telegram:hover .tooltip,
+        .wrapper .telegram:hover .tooltip::before {
+            background: #0088cc;
+            color: #fff;
+        }
+
+        .wrapper .email:hover,
+        .wrapper .email:hover .tooltip,
+        .wrapper .email:hover .tooltip::before {
+            background: #ea4335;
+            color: #fff;
+        }
+
+/* Стили для фонов изображений */
+.wrapper .whatsapp {
+    background-image: url("C:\Users\alina\OneDrive\Рабочий стол\html\source\logowhatsapp.jpg");
+}
+
+.wrapper .telegram {
+    background-image: url("C:\Users\alina\OneDrive\Рабочий стол\html\source\logotelegram.jpg");
+}
+
+.wrapper .email {
+    background-image: url("C:\Users\alina\OneDrive\Рабочий стол\html\source\logoemail.jpg");
+}
+
+.wrapper .phone {
+    background-image: url("source\logomoba.jpg");
+}
+
+        .wrapper .icon span {
+            position: absolute;
+            color: #fff;
+        }
+.wrapper .phone:hover,
+.wrapper .phone:hover .tooltip,
+.wrapper .phone:hover .tooltip::before {
+    background-color: #1E90FF; /* Цвет фона при наведении */
+    color: #fff ; /* Цвет текста при наведении */
+}
+
+.wrapper .phone {
+    background-image: url("C:/Users/alina/OneDrive/Рабочий стол/сайт кватир/source/logomoba.jpg"); /* Путь к изображению логотипа */
+    background-size: cover; /* Растягиваем изображение на всю кнопку */
+    background-position: center; /* Центрируем изображение */
+    border-radius: 50%; /* Делаем круглый фон */
+	 background-color: #1E90FF; /* Цвет фона для кнопки телефона */
+}
+
+
+
+p.underline {
+    font-size: 1.2em; /* Увеличьте размер текста по вашему желанию */
+}
+
+
+
+
+	.border-box {
+
+ border: 0.1px solid #ccc; /* Цвет и толщина рамки */
+    padding: 1px; /* Внутренний отступ */
+    border-radius: 1px; /* Закругление углов */
+}
+.centered {
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+.no-margin {
+    margin: 0; /* Убираем внешние отступы */
+}
+
+	
+   .text-block {
+            margin-left: 40px;
+            font-size: 17px;
+            word-spacing: 7px;
+        }
+        .text-block img {
+            width: 240px; /* Устанавливаем ширину изображения */
+            height: auto;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .text-block p {
+            margin: 0;
+        }
+  .image-block {
+            display: flex;
+            justify-content: center; /* Центрирование изображения по горизонтали */
+            margin-bottom: 20px; /* Отступ снизу для визуального разделения */
+        }
+        .image-block img {
+            width: 240px; /* Устанавливаем ширину изображения */
+            height: auto; /* Сохраняет пропорции изображения */
+			 margin-left: -470px;
+        }
+ 
+ body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.text-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-column p {
+    font-size: 17px;
+    word-spacing: 7px;
+}
+
+.left-column p:nth-child(1) {
+    margin-left: 30px;
+}
+
+.left-column p:nth-child(2) {
+    margin-left: -80px;
+}
+
+.left-column p:nth-child(3) {
+    margin-left: -25px;
+    word-spacing: 10px;
+    margin-bottom: 30px;
+}
+
+.right-column p:nth-child(1) {
+    margin-left: -35px;
+}
+
+.right-column p:nth-child(2) {
+    margin-left: 45px;
+}
+
+.right-column p:nth-child(3) {
+    margin-left: 40px;
+}
+
+.right-column p:nth-child(4) {
+    margin-left: 40px;
+}
+
+.right-column p:nth-child(5) {
+    margin-left: 75px;
+    margin-bottom: 1px;
+}
+
+.right-column p:nth-child(6) {
+    margin-left: 80px;
+    margin-bottom: 1px;
+}
+
+.right-column p:nth-child(7) {
+    margin-left: -10px;
+    margin-bottom: 10px;
+}
+
+
+
+ 
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* Расстояние между колонками */
+    padding: 20px;
+}
+
+.text-column {
+    font-size: 17px;
+    word-spacing: 7px;
+    text-align: justify; /* Выравнивание текста по ширине */
+    max-width: 300px; /* Максимальная ширина колонки */
+}
+
+.left-column p  {
+    margin-left: -450px; 
+}
+.left-column p:nth-child(1) {
+    margin-left: -250px;
+}
+.left-column p:nth-child(2) {
+    margin-left: -250px;
+}
+
+.left-column p:nth-child(3) {
+    margin-left: -250px;
+	 margin-bottom: 1px;
+}
+
+.left-column p:nth-child(4) {
+    margin-left: -235px;
+}
+
+.left-column p:nth-child(5) {
+    margin-left: -210px;
+   
+}
+
+.middle-column p {
+    margin-left: 10px;
+}
+.middle-column p:nth-child(1) {
+    margin-left: -20px;
+}
+.middle-column p:nth-child(2) {
+    margin-left: -35px;
+}
+
+.middle-column p:nth-child(3) {
+    margin-left: -20px;
+}
+
+.middle-column p:nth-child(4) {
+    margin-left: -20px;
+}
+
+.middle-column p:nth-child(5) {
+    margin-left: -5px;
+}
+
+
+.middle-column p:nth-child(6) {
+    margin-right: 20px;
+}
+
+.right-column p {
+    margin-right: 50px;
+}
+
+.right-column p:nth-child(1) {
+    margin-right: -250px;
+}
+
+.right-column p:nth-child(2) {
+    margin-right: -220px;
+}
+
+.right-column p:nth-child(3) {
+    margin-right: -185px;
+}
+
+.right-column p:nth-child(4) {
+    margin-right: -190px;
+}
+
+.right-column p:nth-child(5) {
+    margin-right: -185px;
+}
+
+.right-column p:nth-child(6) {
+    margin-right: -210px;
+}
+
+.right-column p:nth-child(7) {
+    margin-right: -280px;
+	margin-bottom: 1px;
+}
+
+.right-column p:nth-child(8) {
+    margin-right: -210px;	
+}
+ 
+
+
+
+
+
+
+ .footer-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 250px; /* Установите маленький размер для изображения */
+    height: auto;
+	margin-right: 50px;
+}
+
+		
+
+
+		
+		
+
+#language-selection {
+    display: flex;
+    justify-content: flex-end;
+    margin: 40px;
+    margin-right: 5px;
+}
+
+.language-button {
+    font-size: 12px;
+    color: #e1e1e1; /* Цвет текста */
+    font-family: inherit;
+    font-weight: 100;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+    margin: 0 5px; /* Отступы между кнопками */
+    padding: 2px 8px; /* Отступы внутри кнопки */
+}
+
+.language-button:hover,
+.language-button.active {
+    color: #ffffff; /* Цвет текста при наведении или активации */
+}
+
+.language-button::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: #ff0000; /* Цвет линии */
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Расположение линии под кнопкой */
+    transition: width 0.3s ease;
+}
+
+.language-button.active::after {
+    width: 100%;
+}
+	
+	
+	
+ /* Стили для контейнера изображений */
+.footer-images-container {
+    display: flex;
+    justify-content: center; /* Центрирование изображений по горизонтали */
+    align-items: center;     /* Центрирование изображений по вертикали */
+    gap: 25px;               /* Расстояние между изображениями */
+    padding: 10px;           /* Отступы от краев контейнера (по желанию) */
+}
+
+/* Стили для изображений */
+.footer-image {
+    max-height: 250px; /* Можно изменить по желанию */
+    max-width: 250px;  /* Можно изменить по желанию */
+    /* Добавьте другие стили, если нужно */
+}
+
+/* Стили для контейнера с логотипом и иконками */
+.contact-wrapper {
+    display: flex;
+    align-items: center;
+    /* Добавляем отступы вокруг контейнера, если нужно */
+    padding: 10px; /* Измените по необходимости */
+}
+
+/* Стили для логотипа */
+.contact-logo {
+    width: 170px; /* Увеличенный размер логотипа */
+    height: auto;
+    margin-right: 20px; /* Расстояние между логотипом и иконками */
+	 margin-left: -80px; /* Расстояние от левого края контейнера */
+	 transform: translateY(-80px); /* Позиционирование логотипа выше (отрицательное значение) */
+}
+
+/* Стили для контейнера иконок */
+.icons-wrapper {
+    display: flex;
+    gap: 15px; /* Расстояние между иконками */
+}
+
+/* Общие стили для иконок */
+.icon {
+    cursor: pointer;
+    position: relative;
+}
+
+/* Стили для тултипа */
+.icon .tooltip {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap; /* Чтобы текст в тултипе не переносился */
+}
+
+.icon:hover .tooltip {
+    display: block;
+}
+
+
+.logo-text {
+    font-size: 15px; /* Размер шрифта текста */
+    color: #AF9562; /* Цвет шрифта текста */
+	line-height: 1; /* Установить line-height для лучшего выравнивания */
+    margin-top: 10px; /* Смещение текста вверх, если нужно */
+	  margin-left: -170px; /* Отступ справа от логотипа */
+	 
+}
+/* Стили для ссылок под текстом */
+.link-group {
+    margin-top: 185px; /* Небольшой отступ сверху для ссылок */
+    display: flex;
+    flex-direction: column; /* Расположение ссылок в столбик */
+    gap: 15px; /* Расстояние между ссылками */
+	 margin-left: -150px; /* Отступ справа от логотипа */
+	 
+    align-items: flex-start; /* Выравнивание кнопок по левому краю */
+	 
+}
+
+.nav-link {
+    background: none; /* Убираем фон */
+    border: none; /* Убираем границу */
+    color: #ffffff; /* Цвет текста */
+    font-size: 15px; /* Размер шрифта */
+    text-align: left; /* Выравнивание текста по левому краю */
+    margin-bottom: -2px; /* Минимальный отступ между кнопками */
+    cursor: pointer; /* Курсор при наведении */
+    padding: 0; /* Убираем внутренние отступы */
+    transition: color 0.3s ease; /* Плавный переход цвета */
+    text-decoration: none; /* Убираем подчеркивание текста */
+    position: relative;
+    top: 10px; /* Смещение текста вверх (регулируйте по необходимости) */
+    margin-left: -2px; /* Отступ слева */
+}
+
+
+
+
+
+
+
+.nav-link:hover {
+	  text-decoration: none; /* Убираем подчеркивание текста при любых состояниях */
+    background-color: #8A6E53; /* Цвет фона при наведении */
+}
+
+
+
+
+
+.nav-link:hover {
+    text-decoration: underline; /* Подчёркивание текста при наведении */
+}
+
+/* Стили для текста "GALERIA" */
+.menu-item {
+    font-size: 15px; /* Размер шрифта текста */
+    color: #AF9562; /* Цвет шрифта текста */
+    margin-left: -990px; /* Отступ справа от текста "NUESTRA EMPRESA" */
+	 position: relative;
+    top: 20px; /* Смещение текста вверх (регулируйте по необходимости) */
+	  
+}
+
+
+ 
+/* Стили для кнопок галереи */
+.gallery-buttons {
+	 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Выравнивание кнопок по левому краю */
+    margin-top: 210px; /* Отступ сверху от предыдущего элемента */
+	 margin-left: -635px;
+}
+
+.gallery-button {
+    background: none; /* Убираем фон */
+    border: none; /* Убираем границу */
+    color: #ffffff ; /* Цвет текста, как у вашего заголовка */
+    font-size: 15px; /* Размер шрифта */
+    text-align: left; /* Выравнивание текста по левому краю */
+    margin-bottom: 10px; /* Отступ между кнопками */
+    cursor: pointer; /* Курсор при наведении */
+    padding: 0; /* Убираем внутренние отступы */
+    transition: color 0.3s ease; /* Плавный переход цвета */
+	 gap: 20px; /* Расстояние между ссылками */
+	 text-decoration: none; /* Убираем подчеркивание текста */
+	 margin-left: 583px; /* Отступ справа от текста "NUESTRA EMPRESA" */
+	 position: relative;
+    top: -180px; /* Смещение текста вверх (регулируйте по необходимости) */
+}
+
+.gallery-button:hover {
+    color: #8A6E53; /* Цвет текста при наведении */
+}
+
+
+
+
+.about-section {
+font-size: 20px;
+ margin-bottom: -40px;
+ margin-left: 10px;  
+ color:#AF9562;
+}
+
+
+
+
+        .content {
+            text-align: center;
+            width: 100%;
+        }
+
+        .package {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .package img {
+            max-width: 20%;
+            height: auto;
+            margin-bottom: 30px;
+			margin-left: -5px;
+        }
+
+       
+		
+	  .package div {
+            display: flex;
+            flex-direction: column;
+          
+			 align-items: center; /* Центрирование текста */
+        }
+
+        .image-text {
+            margin: 0;
+            line-height: 2.0;
+        }
+		
+		   .package p.title {
+            margin: 0 0 50px 0; /* Добавлен нижний отступ */
+            font-size: 25px; /* Увеличенный размер текста */
+            font-weight: bold;
+            color: #AF9562; /* Цвет текста */
+			 white-space: nowrap; /* Предотвращение переноса текста */
+ }
+	
+
+		
+		
+		
+		
+
+        /* Индивидуальные стили для смещения текста */
+        #hacemosBtn { margin-left: -20px; }
+        #presupuestoBtn { margin-left: -15px; }
+        #deseadasBtn { margin-left: -10px; margin-bottom: 30px;}
+		
+        #ademásBtn { margin-left: -11px; }
+        #expertoBtn { margin-left: -5px; }
+        #arrendamientoBtn { margin-left: -1px; }
+        #derechos777Btn { margin-left: -3px; }
+        #obligacionesBtn { margin-left: -5px; }
+        #cualquier1Btn { margin-left: -5px; }
+        #procesoBtn { margin-left: -5px; }
+		
+		
+		
+		 #deseanBtn { margin-left: -10px; }
+         #establecerseBtn { margin-left: 5px; }
+         #ofrecemosBtn { margin-left: 5px; }
+         #completoBtn { margin-left: 5px; }
+         #propiedades1Btn { margin-left: 10px; margin-bottom: 30px;}
+				
+         #inicialBtn { margin-left: 10px; }
+         #cierreBtn { margin-left: 10px; }
+         #estamosBtn { margin-left: 10px; }
+         #idealBtn { margin-left: 10px; }
+		 #cumplaBtn { margin-left: 10px; }
+         #nuestros12Btn { margin-left: 10px; margin-bottom: 30px;}
+				
+				
+         #equipoBtn { margin-left: 15px; }
+         #experto12Btn { margin-left: 15px; }
+         #evaluaciónBtn { margin-left: 17px; }
+         #trámitesBtn { margin-left: 15px; }
+         #financierosBtn { margin-left: 15px; }
+         #financieros888Btn { margin-left: 21px; margin-bottom: 30px;}
+		 
+         #garantizamosBtn { margin-left: 10px; }
+		 #estrésBtn { margin-left: 8px; }
+         #proceso121Btn { margin-left: 10px; }
+         #duranteBtn { margin-left: 15px; margin-bottom: 30px;}
+		
+		
+		
+		
+         #además1222Btn { margin-left: -20px; }
+         #tambiénBtn { margin-left: -5px; }
+         #erviciosBtn { margin-left: -5px; }
+         #cualquierBtn { margin-left: -5px; }
+         #necesidadesBtn { margin-left: -5px; }
+         #gustosBtn { margin-left: -5px; margin-bottom: 30px;}
+		 		
+         #seaBtn { margin-left: -10px; }
+		 #alizaciónBtn { margin-left: -5px; }
+         #profesionalesBtn { margin-left: -5px; }
+         #desdeBtn { margin-left: -5px; }
+         #hastaBtn { margin-left: -5px; }
+         #proyectoBtn { margin-left: -10px; }
+         #sea111Btn { margin-left: -5px; }
+         #alización111Btn { margin-left: 5px; margin-bottom: 30px;}
+				
+         #brindarteBtn { margin-left: -5px; }
+         #resultadosBtn { margin-left: 5px; }
+		 #superenBtn { margin-left: 5px; }
+         #transformenBtn { margin-left: 10px; }
+         #sueños1Btn { margin-left: 7px; }
+         #sueños1666Btn { margin-left: 15px; }
+		 
+		 
+		 
+		 
+		 #sobreno1Btn {
+		 margin-left: -20px; 
+		 margin-bottom: 5px; 
+		 word-spacing: 5px; 
+		 font-size: 14px; 
+		 }
+		 #sobrnBtn {
+		margin-left: 50px; 
+		margin-bottom: 5px; 
+		word-spacing: 5px; 
+		font-size: 15px;  
+		}
+		 #sobBtn {
+		 margin-left: -25px; 
+		 margin-bottom: 5px; 
+		 word-spacing: 5px; 
+		font-size: 15px; }
+		 #sob3Btn {
+			 margin-bottom: 5px;
+			 margin-left: 55px; 
+			 word-spacing: 5px; 
+			 font-size: 15px; 
+			 }
+         #sso1Btn {
+			 margin-bottom: 5px;
+			 margin-left: -35px; 
+			 word-spacing: 5px; 
+			 font-size: 15px;  }
+		 #s99Btn {  
+		 margin-bottom: 5px;
+		 margin-left: 130px;
+		 word-spacing: 5px; 
+		 font-size: 15px; }
+
+
+#ofreceBtn{
+	   font-size: 16px; 
+	   margin-bottom: 5px;
+	   margin-left: -20px;
+	   word-spacing: 5px;
+	   }
+	   #multidBtn{
+		  margin-left: 10px; 
+		  margin-bottom: 5px; 
+		  font-size: 16px; 
+		  word-spacing: 5px;
+		  
+		 }  
+	   #ayudaBtn{
+		   margin-left: -15px;  
+		   font-size: 16px;
+		   margin-bottom: 5px; 
+		   word-spacing: 5px;
+		
+		   }
+	   #aspesBtn{
+		  font-size: 16px; 
+		  margin-bottom: 20px;
+		  margin-left: 20px;
+		  word-spacing: 5px;
+		   }
+
+
+ #logrosBtn{
+		  font-size: 18px;
+		  text-align: center; 
+		  margin-left: -20px;
+		  margin-bottom: 10px;
+		  word-spacing: 8px;
+		  
+		   
+		   
+		   } 
+		
+	/* Цвет текста */
+#logrosBtn {
+    color: #AF9562;
+}	
+		  #ventajasBtn{
+		  font-size: 28px;
+		  text-align: center; 
+		  margin-left: -20px;
+		  margin-bottom: 10px;
+		  word-spacing: 8px;
+		   
+		  
+}
+/* Цвет текста */
+#ventajasBtn {
+    color: #AF9562 ;
+	 margin-top: 60px; /* Отступ сверху для перемещения элемента вниз */
+}
+   
+.details-text {
+    width: 350px; /* Фиксированная ширина контейнера */
+    margin: 0 auto; /* Центрирование контейнера на странице */
+	 margin-top: 60px; /* Отступ сверху для перемещения элемента вниз */
+}
+
+.details-text p {
+    font-size: 16px; /* Размер шрифта */
+    line-height: 1.5; /* Междустрочный интервал */
+    text-align: left; /* Выравнивание текста по левому краю */
+    margin: 10px 0; /* Отступы между абзацами */
+    width: 100%; /* Занимает всю ширину контейнера */
+}
+
+
+
+
+/* Центрирование текста */
+#sobrenosotros1Btn {
+    display: flex;
+    justify-content: center; /* Центрирует по горизонтали */
+    align-items: center; /* Центрирует по вертикали */
+    text-align: center;
+	  margin-right: 20px;
+}
+
+/* Цвет текста */
+.centered {
+    color: #AF9562;
+}
+
+
+
+#sobre13Btn{
+    display: flex;
+    justify-content: center; /* Центрирует по горизонтали */
+    align-items: center; /* Центрирует по вертикали */
+    text-align: center;
+	  margin-right: 20px;
+	   margin: 40px 0; /* Отступы между строками текста */
+}
+/* Цвет текста */
+#sobre13Btn {
+    color: #AF9562;
+}
+#sobre13Btn {
+    font-size: 24px; /* Увеличенный размер шрифта */
+}
+ 
+                          
+
+
+
+#reseñasBtn{
+	color:#AF9562;
+	font-size: 20px; /* Увеличенный размер шрифта */
+	}
+	
+	#reseñasBtn{
+    display: flex;
+    justify-content: center; /* Центрирует по горизонтали */
+    align-items: center; /* Центрирует по вертикали */
+    text-align: center;
+	  margin-right: 20px;
+	   margin: 40px 0; /* Отступы между строками текста */
+}
+
+
+
+   
+@media only screen and (max-width: 1024px) 
+{
+	 #sobreno1Btn {
+		 word-spacing: 2px;
+		  font-size: 15px; 
+		  white-space: nowrap; /* Предотвращение переноса текста */
+		 }
+		 #sobrnBtn {
+		word-spacing: 2px;  
+		 font-size: 15px;
+		 white-space: nowrap; /* Предотвращение переноса текста */
+		}
+		 #sobBtn {
+		 word-spacing: 2px; 
+		  font-size: 15px;
+		  white-space: nowrap; /* Предотвращение переноса текста */
+		}
+		 #sob3Btn {
+			 word-spacing: 2px;
+			  font-size: 15px;
+			  white-space: nowrap; /* Предотвращение переноса текста */
+			 }
+         #sso1Btn {
+			 word-spacing: 2px; 
+			  font-size: 15px;
+			  white-space: nowrap; /* Предотвращение переноса текста */
+			 }
+		 #s99Btn {  
+		 word-spacing: 2px; 
+		  font-size: 15px;
+		  white-space: nowrap; /* Предотвращение переноса текста */
+		 }	
+
+.logo {
+   
+    top: 55px;
+    right  : 400px;
+}
+	/* Стили для логотипа */
+.contact-logo {
+    width: 140px; /* Увеличенный размер логотипа */
+    margin-right: 20px; /* Расстояние между логотипом и иконками */
+	 margin-left: 10px; /* Расстояние от левого края контейнера */
+	
+}
+
+.logo-text {
+    font-size: 15px; /* Размер шрифта текста */
+    margin-top: -30px; /* Смещение текста вверх, если нужно */
+	  margin-left: -160px; /* Отступ справа от логотипа */
+	 
+}
+/* Стили для ссылок под текстом */
+.link-group {
+    margin-top: 175px; /* Небольшой отступ сверху для ссылок */
+	 margin-left: -145px; /* Отступ справа от логотипа */
+	 
+   
+}
+
+
+/* Стили для текста "GALERIA" */
+.menu-item {
+    margin-left: -820px; /* Отступ справа от текста "NUESTRA EMPRESA" */
+    top: 20px; /* Смещение текста вверх (регулируйте по необходимости) */
+	  
+}
+
+.gallery-button {
+  
+	 margin-left: 663px; /* Отступ справа от текста "NUESTRA EMPRESA" */
+    top: -170px; /* Смещение текста вверх (регулируйте по необходимости) */
+}
+
+
+/* Стиль для текста "CONTACTOS" */
+.contact-text {
+    margin-left: -1270px; /* Отступ справа от текста "NUESTRA EMPRESA" */
+    top: -10px; /* Смещение текста вверх (регулируйте по необходимости) */
+}
+
+
+/* Обертка для иконок */
+.wrapper {
+	margin-left: -130px; /* Отступ справа от текста "NUESTRA EMPRESA" */
+    top: 55px; /* Смещение текста вверх (регулируйте по необходимости) */
+}
+.container {
+        max-width: 1024px; /* Устанавливаем максимальную ширину */
+        margin: 0 auto;   /* Центрируем контейнер на экране */
+        width: 100%;      /* Делаем ширину контейнера 100%, чтобы он не превышал max-width */
+        padding: 0 15px;  /* Добавляем отступы по краям */
+    }
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Предотвращение горизонтальной прокрутки */
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box; /* Учитывает паддинги и границы в ширине контейнера */
+}
+
+
+
+	}
+
+	
+	
+	/* Адаптивность для экранов больше  912px */
+@media only screen and (max-width: 912px) 
+{
+		.logo {
+    top: 55px;
+    right  : 350px;
+}
+	 #sobreno1Btn {
+		 word-spacing: 2px;
+		  font-size: 13px; 
+		  white-space: nowrap; /* Предотвращение переноса текста */
+		 }
+		 #sobrnBtn {
+		word-spacing: 2px;  
+		 font-size: 13px;
+		 white-space: nowrap; /* Предотвращение переноса текста */
+		}
+		 #sobBtn {
+		 word-spacing: 2px; 
+		  font-size: 13px;
+		  white-space: nowrap; /* Предотвращение переноса текста */
+		}
+		 #sob3Btn {
+			 word-spacing: 2px;
+			  font-size: 13px;
+			  white-space: nowrap; /* Предотвращение переноса текста */
+			 }
+         #sso1Btn {
+			 word-spacing: 2px; 
+			  font-size: 13px;
+			  white-space: nowrap; /* Предотвращение переноса текста */
+			 }
+		 #s99Btn {  
+		 word-spacing: 2px; 
+		  font-size: 13px;
+		  white-space: nowrap; /* Предотвращение переноса текста */
+		 }	 
+		 
+		  
+ #logrosBtn{
+		  font-size: 16px;
+		  white-space: nowrap; /* Предотвращение переноса текста */
+		 
+		  }
+		  #ofreceBtn{
+	   font-size: 15px; 
+	   word-spacing: 2px;
+	   white-space: nowrap; /* Предотвращение переноса текста */
+	   }
+	   #multidBtn{
+		  word-spacing: 2px;
+		  font-size: 15px; 
+		  white-space: nowrap; /* Предотвращение переноса текста */
+		  
+		 }  
+	   #ayudaBtn{ 
+		   font-size: 15px;
+		   word-spacing: 2px;
+		   white-space: nowrap; /* Предотвращение переноса текста */
+		
+		   }
+	   #aspesBtn{
+		  font-size: 15px; 
+		  word-spacing: 2px;
+		  white-space: nowrap; /* Предотвращение переноса текста */
+		   }
+		 
+
+
+
+ /* Стили для логотипа */
+.contact-logo {
+    width: 140px; /* Увеличенный размер логотипа */
+    margin-right: 20px; /* Расстояние между логотипом и иконками */
+	 margin-left: 10px; /* Расстояние от левого края контейнера */
+	
+}
+
+.logo-text {
+    font-size: 15px; /* Размер шрифта текста */
+    margin-top: -30px; /* Смещение текста вверх, если нужно */
+	  margin-left: -160px; /* Отступ справа от логотипа */
+	 
+}
+/* Стили для ссылок под текстом */
+.link-group {
+    margin-top: 175px; /* Небольшой отступ сверху для ссылок */
+	 margin-left: -145px; /* Отступ справа от логотипа */
+	 
+   
+}
+
+
+/* Стили для текста "GALERIA" */
+.menu-item {
+    margin-left: -710px; /* Отступ справа от текста "NUESTRA EMPRESA" */
+    top: 25px; /* Смещение текста вверх (регулируйте по необходимости) */
+	  
+}
+
+.gallery-button {
+  
+	 margin-left: 660px; /* Отступ справа от текста "NUESTRA EMPRESA" */
+    top: -165px; /* Смещение текста вверх (регулируйте по необходимости) */
+}
+
+
+/* Стиль для текста "CONTACTOS" */
+.contact-text {
+    margin-left: -1250px; /* Отступ справа от текста "NUESTRA EMPRESA" */
+    top: 20px; /* Смещение текста вверх (регулируйте по необходимости) */
+}
+
+
+/* Обертка для иконок */
+.wrapper {
+	margin-left: -140px; /* Отступ справа от текста "NUESTRA EMPRESA" */
+    top: 90px; /* Смещение текста вверх (регулируйте по необходимости) */
+}
+
+	}
+
+	
+	/* Адаптивность для экранов больше  860px */
+@media only screen and (max-width: 860px) 
+{
+	/* Стили для текста "GALERIA" */
+.menu-item {
+    margin-left: -625px; /* Отступ справа от текста "NUESTRA EMPRESA" */
+    top: 25px; /* Смещение текста вверх (регулируйте по необходимости) */
+	  
+}
+/* Стиль для текста "CONTACTOS" */
+.contact-text {
+    margin-left: -1150px; /* Отступ справа от текста "NUESTRA EMPRESA" */
+    top: 20px; /* Смещение текста вверх (регулируйте по необходимости) */
+}
+
+
+/* Обертка для иконок */
+.wrapper {
+	margin-left: -140px; /* Отступ справа от текста "NUESTRA EMPRESA" */
+    top: 90px; /* Смещение текста вверх (регулируйте по необходимости) */
+}
+ #sobreno1Btn {
+		 word-spacing: 2px;
+		  font-size: 12px; 
+		   white-space: nowrap; /* Предотвращение переноса текста */
+		 }
+		 #sobrnBtn {
+		word-spacing: 2px;  
+		 font-size: 12px;
+		  white-space: nowrap; /* Предотвращение переноса текста */
+		}
+		 #sobBtn {
+		 word-spacing: 2px; 
+		  font-size: 12px;
+		   white-space: nowrap; /* Предотвращение переноса текста */
+		}
+		 #sob3Btn {
+			 word-spacing: 2px;
+			  font-size: 12px;
+			   white-space: nowrap; /* Предотвращение переноса текста */
+			 }
+         #sso1Btn {
+			 word-spacing: 2px; 
+			  font-size: 12px;
+			   white-space: nowrap; /* Предотвращение переноса текста */
+			 }
+		 #s99Btn {  
+		 word-spacing: 2px; 
+		  font-size: 12px;
+		   white-space: nowrap; /* Предотвращение переноса текста */
+		 }	 
+		 			.menu button {
+    font-size: 15px;
+    margin-left: -15px; /* Сдвиг каждой кнопки вправо */
+    margin-right: 5px; /* Небольшое расстояние между кнопками */
+}
+	}
+	
+		/* Адаптивность для экранов больше  830px */
+@media only screen and (max-width: 830px) 
+{
+	 #sobreno1Btn {
+		 word-spacing: 2px;
+		  font-size: 12px; 
+		   white-space: nowrap; /* Предотвращение переноса текста */
+		 }
+		 #sobrnBtn {
+		word-spacing: 2px;  
+		 font-size: 12px;
+		  white-space: nowrap; /* Предотвращение переноса текста */
+		}
+		 #sobBtn {
+		 word-spacing: 2px; 
+		  font-size: 12px;
+		   white-space: nowrap; /* Предотвращение переноса текста */
+		}
+		 #sob3Btn {
+			 word-spacing: 2px;
+			  font-size: 12px;
+			   white-space: nowrap; /* Предотвращение переноса текста */
+			 }
+         #sso1Btn {
+			 word-spacing: 2px; 
+			  font-size: 12px;
+			   white-space: nowrap; /* Предотвращение переноса текста */
+			 }
+		 #s99Btn {  
+		 word-spacing: 2px; 
+		  font-size: 12px;
+		   white-space: nowrap; /* Предотвращение переноса текста */
+		 }	 
+		/* Стили для текста "GALERIA" */
+.menu-item {
+    margin-left: -590px; /* Отступ справа от текста "NUESTRA EMPRESA" */
+    top: 25px; /* Смещение текста вверх (регулируйте по необходимости) */
+	  
+}
+ /* Стиль для текста "CONTACTOS" */
+.contact-text {
+    margin-left: -1050px; /* Отступ справа от текста "NUESTRA EMPRESA" */
+    top: 20px; /* Смещение текста вверх (регулируйте по необходимости) */
+}
+
+
+/* Обертка для иконок */
+.wrapper {
+	margin-left: -140px; /* Отступ справа от текста "NUESTRA EMPRESA" */
+    top: 90px; /* Смещение текста вверх (регулируйте по необходимости) */
+}
+.details-text {
+    padding: 12px; /* Ещё меньше внутренний отступ */
+    margin-top: 30px; /* Отступ сверху */
+    margin-left: 20px; /* Отступ слева для смещения вправо */
+    width: 200%; /* Полная ширина контейнера */
+    max-width: 90%; /* Уменьшенная максимальная ширина */
+}
+
+.details-text p {
+    margin: 10px 0; /* Ещё меньшие отступы между абзацами */
+    font-size: 12px; /* Ещё меньший размер шрифта */
+	 white-space: nowrap; /* Предотвращает перенос текста на новую строку */  
+}
+    #logrosBtn {
+        font-size: 12px;
+        white-space: nowrap;
+    }
+	#sobre13Btn {
+    font-size: 22px; 
+	 margin-right: 35px;
+   }
+	  #ofreceBtn{
+	   font-size: 14px; 
+	   word-spacing: 2px;
+	    white-space: nowrap; /* Предотвращает перенос текста на новую строку */ 
+	   }
+	   #multidBtn{
+		  word-spacing: 2px;
+		  font-size: 14px; 
+		   white-space: nowrap; /* Предотвращает перенос текста на новую строку */ 
+		  
+		 }  
+	   #ayudaBtn{ 
+		   font-size: 14px;
+		   word-spacing: 2px;
+		 white-space: nowrap; /* Предотвращает перенос текста на новую строку */ 
+		   }
+	   #aspesBtn{
+		  font-size: 14px; 
+		  word-spacing: 2px;
+		   white-space: nowrap; /* Предотвращает перенос текста на новую строку */ 
+		   }
+
+	}
+	
+	
+	
+		/* Адаптивность для экранов больше  800px */
+@media only screen and (max-width: 780px) 
+{
+	 #sobreno1Btn {
+		 word-spacing: 2px;
+		  font-size: 11px; 
+		   white-space: nowrap; /* Предотвращение переноса текста */
+		 }
+		 #sobrnBtn {
+		word-spacing: 2px;  
+		 font-size: 11px;
+		  white-space: nowrap; /* Предотвращение переноса текста */
+		}
+		 #sobBtn {
+		 word-spacing: 2px; 
+		  font-size: 11px;
+		   white-space: nowrap; /* Предотвращение переноса текста */
+		}
+		 #sob3Btn {
+			 word-spacing: 2px;
+			  font-size: 11px;
+			   white-space: nowrap; /* Предотвращение переноса текста */
+			 }
+         #sso1Btn {
+			 word-spacing: 2px; 
+			  font-size: 11px;
+			   white-space: nowrap; /* Предотвращение переноса текста */
+			 }
+		 #s99Btn {  
+		 word-spacing: 2px; 
+		  font-size: 11px;
+		   white-space: nowrap; /* Предотвращение переноса текста */
+		 }	 
+		  #logrosBtn{
+		  font-size: 14px;
+		   white-space: nowrap; /* Предотвращение переноса текста */
+		  }
+		  .package img {
+            max-width: 30%;
+            
+        }
+				/* Стили для текста "GALERIA" */
+.menu-item {
+    margin-left: -570px; /* Отступ справа от текста "NUESTRA EMPRESA" */
+    top: 15px; /* Смещение текста вверх (регулируйте по необходимости) */
+	  
+}
+ }
+ 
+ /* Адаптивность для экранов больше 560px */
+@media only screen and (max-width: 560px) 
+{
+		.logo {
+    top: 60px;
+    right  : 190px;
+	width: 120px;
+	
+}
+.language-button {
+    right  : 10px;
+	  font-size: 8px; /* Еще меньший размер шрифта */
+     top: 5px;
+}
+
+.button {
+	
+	   font-size: 10px; /* Еще меньший размер шрифта */
+    padding: 5px 10px; /* Уменьшение размера кнопки */
+			margin-right: 20px; /* Добавлен отступ справа */
+        }
+			.menu button {
+    font-size: 10px;
+    margin-left: -15px; /* Сдвиг каждой кнопки вправо */
+    margin-right: 5px; /* Небольшое расстояние между кнопками */
+}
+.centered-image {
+    width: 70%; /* Заменяем максимальную ширину на конкретное значение, чтобы увеличить изображение */
+    margin-right: 70px;
+       
+		}
+		/* Центрирование текста */
+#sobrenosotros1Btn {
+     font-size: 20px;
+	  margin-right: -10px;
+}
+  #sobreno1Btn {
+        word-spacing: 1px;
+        font-size: 8px;
+        margin-left: -30px;
+        white-space: nowrap; /* Предотвращает перенос текста на новую строку */
+			
+    }
+    #sobrnBtn {
+        word-spacing: 2px;
+        font-size: 8px;
+        margin-left: -15px;
+        white-space: nowrap; /* Предотвращает перенос текста на новую строку */
+			 margin-bottom: -8px; /* Уменьшение отступа снизу, чтобы текст был ближе к тексту  */ 
+    }
+    #sobBtn {
+        word-spacing: 2px;
+        font-size: 8px;
+        margin-left: -40px;
+    }
+    #sob3Btn {
+        word-spacing: 2px;
+        font-size: 8px;
+        margin-left: -15px;
+        white-space: nowrap; /* Предотвращает перенос текста на новую строку */
+			 margin-bottom: -8px; /* Уменьшение отступа снизу, чтобы текст был ближе к тексту  */ 
+    }
+    #sso1Btn {
+        word-spacing: 2px;
+        font-size: 8px;
+        margin-left: -45px;
+        white-space: nowrap; /* Предотвращает перенос текста на новую строку */
+    }
+    #s99Btn {
+        word-spacing: 2px;
+        font-size: 8px;
+        margin-left: 40px;
+        white-space: nowrap; /* Предотвращает перенос текста на новую строку */
+    }
+	 #logrosBtn{
+		  font-size: 10px;
+		   word-spacing: 1px;
+		   margin-right: -10px;
+		 white-space: nowrap; /* Предотвращает перенос текста на новую строку */  
+	
+		  }
+  #ventajasBtn{
+		  font-size: 18px;
+		  margin-left: 20px;
+	  
+}
+ .details-text {
+    padding: 12px; /* Ещё меньше внутренний отступ */
+    margin-top: 30px; /* Отступ сверху */
+    margin-left: 10px; /* Отступ слева для смещения вправо */
+    width: 200%; /* Полная ширина контейнера */
+    max-width: 95%; /* Уменьшенная максимальная ширина */
+}
+
+.details-text p {
+    margin: 10px 0; /* Ещё меньшие отступы между абзацами */
+    font-size: 10px; /* Ещё меньший размер шрифта */
+	 white-space: nowrap; /* Предотвращает перенос текста на новую строку */  
+}
+.bottom-image {
+    width: 95%; /* Пример, уменьшает изображение до 110% от оригинального размера */
+    height: auto; /* Сохраняет пропорции изображения */
+	 margin-right: 12px;
+ 
+}
+#sobre13Btn {
+    font-size: 16px; 
+	 margin-right: 25px;
+   }
+	  #ofreceBtn{
+	   font-size: 8px; 
+	   word-spacing: 2px;
+	    white-space: nowrap; /* Предотвращает перенос текста на новую строку */ 
+		
+	   }
+	   #multidBtn{
+		  word-spacing: 2px;
+		  font-size: 8px; 
+		   white-space: nowrap; /* Предотвращает перенос текста на новую строку */ 
+		  
+		 }  
+	   #ayudaBtn{ 
+		   font-size: 8px;
+		   word-spacing: 2px;
+		 white-space: nowrap; /* Предотвращает перенос текста на новую строку */ 
+		   }
+	   #aspesBtn{
+		  font-size: 8px; 
+		  word-spacing: 2px;
+		   white-space: nowrap; /* Предотвращает перенос текста на новую строку */ 
+		   }
+		     .package p.title {
+            
+            font-size: 16px; /* Увеличенный размер текста */
+             margin-right: 12px;
+			 white-space: nowrap; /* Предотвращение переноса текста */
+ }
+ 
+          .package img {
+            max-width: 35%;
+            height: auto;
+            margin-bottom: 30px;
+			margin-left: -20px;
+        }
+		 /* Индивидуальные стили для смещения текста */
+        #hacemosBtn { margin-left: -20px;  font-size: 12px;}
+        #presupuestoBtn { margin-left: -20px; font-size: 12px;}
+        #deseadasBtn { margin-left: -20px; margin-bottom: 30px; font-size: 12px;}
+		
+        #ademásBtn { margin-left: -20px; font-size: 12px;}
+        #expertoBtn { margin-left: -20px; font-size: 12px;}
+        #arrendamientoBtn { margin-left: -20px;  font-size: 12px;}
+        #derechos777Btn {margin-left: -20px; font-size: 12px;}
+        #obligacionesBtn { margin-left: -20px; font-size: 12px;}
+        #cualquier1Btn { margin-left: -20px; font-size: 12px;}
+        #procesoBtn { margin-left: -20px; font-size: 12px;}
+		
+		
+		
+		 #deseanBtn { margin-left: -20px; font-size: 12px;}
+         #establecerseBtn { margin-left: -20px; font-size: 12px;}
+         #ofrecemosBtn { margin-left: -20px; font-size: 12px;}
+         #completoBtn { margin-left: -20px; font-size: 12px;}
+         #propiedades1Btn { margin-left: -20px; margin-bottom: 30px; font-size: 12px;}
+				
+         #inicialBtn { margin-left: -20px; font-size: 12px;}
+         #cierreBtn { margin-left: -20px; font-size: 12px;}
+         #estamosBtn { margin-left: -20px; font-size: 12px;}
+         #idealBtn { margin-left: -20px; font-size: 12px;}
+		 #cumplaBtn { margin-left: -20px; font-size: 12px;}
+         #nuestros12Btn { margin-left: -20px; margin-bottom: 30px; font-size: 12px;}
+				
+				
+         #equipoBtn { margin-left: -20px; font-size: 12px;}
+         #experto12Btn { margin-left: -20px; font-size: 12px;}
+         #evaluaciónBtn {margin-left: -20px; font-size: 12px;}
+         #trámitesBtn { margin-left: -20px; font-size: 12px;}
+         #financierosBtn { margin-left: -20px; font-size: 12px;}
+         #financieros888Btn { margin-left: -20px; margin-bottom: 30px;font-size: 12px; }
+		 
+         #garantizamosBtn { margin-left: -20px; font-size: 12px;}
+		 #estrésBtn {margin-left: -20px; font-size: 12px;}
+         #proceso121Btn { margin-left: -20px; font-size: 12px;}
+         #duranteBtn { margin-left: -20px; margin-bottom: 30px; font-size: 12px;}
+		
+		
+		
+		
+         #además1222Btn { margin-left: -20px; font-size: 12px;}
+         #tambiénBtn { margin-left: -20px; font-size: 12px;}
+         #erviciosBtn {margin-left: -20px; font-size: 12px;}
+         #cualquierBtn { margin-left: -20px; font-size: 12px;}
+         #necesidadesBtn { margin-left: -20px; font-size: 12px;}
+         #gustosBtn {margin-left: -20px; margin-bottom: 30px; font-size: 12px;}
+		 		
+         #seaBtn { margin-left: -20px; font-size: 12px;}
+		 #alizaciónBtn { margin-left: -20px; font-size: 12px;}
+         #profesionalesBtn { margin-left: -20px; font-size: 12px;}
+         #desdeBtn {margin-left: -20px; font-size: 12px;}
+         #hastaBtn { margin-left: -20px; font-size: 12px;}
+         #proyectoBtn { margin-left: -20px; font-size: 12px;}
+         #sea111Btn { margin-left: -20px; font-size: 12px;}
+         #alización111Btn { margin-left: -20px; margin-bottom: 30px; font-size: 12px;}
+				
+         #brindarteBtn { margin-left: -20px; font-size: 12px;}
+         #resultadosBtn { margin-left: -20px; font-size: 12px;}
+		 #superenBtn { margin-left: -20px; font-size: 12px;}
+         #transformenBtn { margin-left: -20px; font-size: 12px;}
+         #sueños1Btn { margin-left: -20px; font-size: 12px;}
+         #sueños1666Btn { margin-left: -20px; font-size: 12px;}
+		 
+		  #reseñasBtn{
+	
+	font-size: 16px; /* Увеличенный размер шрифта */
+	margin-left: -10px;
+	}
+
+.testimonial {
+            margin-left: 25px;
+				}
+
+			/* Стили для текста "GALERIA" */
+.menu-item {
+    margin-left: -340px; /* Отступ справа от текста "NUESTRA EMPRESA" */
+    top: 15px; /* Смещение текста вверх (регулируйте по необходимости) */
+	  
+}
+ /* Стиль для текста "CONTACTOS" */
+.contact-text {
+    margin-left: -850px; /* Отступ справа от текста "NUESTRA EMPRESA" */
+    top: 20px; /* Смещение текста вверх (регулируйте по необходимости) */
+}
+
+
+/* Обертка для иконок */
+.wrapper {
+	margin-left: -140px; /* Отступ справа от текста "NUESTRA EMPRESA" */
+    top: 90px; /* Смещение текста вверх (регулируйте по необходимости) */
+}
+	}
+	
+@media only screen and (max-width: 450px) 
+ /* Ваши стили для устройств с шириной экрана до 450px */
+{
+	.logo {
+	   max-width: 25%;	
+    top: 40px;
+    right  : 170px;
+	
+}
+.language-button {
+    right  :-5px;
+	  font-size: 8px; /* Еще меньший размер шрифта */
+     top: -15px;
+	  margin-bottom: -10px; /* Уменьшение отступа снизу, чтобы кнопка был ближе к кнопка  */ 
+}
+
+.button {
+	
+	   font-size: 8px; /* Еще меньший размер шрифта */
+    padding: 5px 10px; /* Уменьшение размера кнопки */
+	margin-right: 15px; /* Добавлен отступ справа */
+	  margin-bottom: -120px; /* Уменьшение отступа снизу, чтобы кнопка был ближе к меню  */ 
+        }
+		
+		
+		.menu button {
+    font-size: 8px;
+    margin-left: -15px; /* Сдвиг каждой кнопки вправо */
+    margin-right: 5px; /* Небольшое расстояние между кнопками */
+	 top: -30px;
+}
+	
+	
+.centered-image {
+    width: 70%; /* Заменяем максимальную ширину на конкретное значение, чтобы увеличить изображение */
+    margin-right: 55px;
+	 display: block; /* Убираем возможные пробелы вокруг изображения */
+    position: relative; /* Относительное позиционирование */
+    top: -75px; /* Сдвигаем изображение вверх, чтобы оно было ближе к меню */
+      margin-bottom: -110px; /* Уменьшение отступа снизу, чтобы текст был ближе к изображению */  
+		}
+			
+		/* Центрирование текста */
+#sobrenosotros1Btn {
+     font-size: 13px;
+	  margin-right: 20px;
+}
+ #sobreno1Btn {
+		 word-spacing: 1px;
+		  font-size: 6px; 
+		   margin-left: -45px; 
+		    white-space: nowrap; /* Предотвращает перенос текста на новую строку */  
+	 
+		 }
+		 #sobrnBtn {
+		word-spacing: 2px;  
+		 font-size: 6px;
+		 margin-left: -45px; 
+		    white-space: nowrap; /* Предотвращает перенос текста на новую строку */  
+	 
+		}
+		 #sobBtn {
+		 word-spacing: 2px; 
+		  font-size: 6px;
+		  margin-left: -45px; 
+		    
+		}
+		 #sob3Btn {
+			 word-spacing: 2px;
+			  font-size: 6px;
+			    margin-left: -30px; 
+				  white-space: nowrap; /* Предотвращает перенос текста на новую строку */  
+	
+			 }
+         #sso1Btn {
+			 word-spacing: 2px; 
+			  font-size: 6px;
+			  margin-left: -45px;
+	 white-space: nowrap; /* Предотвращает перенос текста на новую строку */  
+			 }
+		 #s99Btn {  
+		 word-spacing: 2px; 
+		  font-size: 6px;
+		  margin-left: 10px;
+		   white-space: nowrap; /* Предотвращает перенос текста на новую строку */  
+		 }	 
+		  #logrosBtn{
+		  font-size: 8px;
+		   word-spacing: 1px;
+		   margin-right: 200px;
+		 white-space: nowrap; /* Предотвращает перенос текста на новую строку */
+		 margin-top: -30px; /* Отступ сверху */ 
+	
+		  }
+  #ventajasBtn{
+		  font-size: 15px;
+		  margin-left: -190px;
+		   margin-top: 20px; /* Отступ сверху */ 
+	  
+}
+ .details-text {
+    padding: 4px; /* Ещё меньше внутренний отступ */
+    margin-top: 30px; /* Отступ сверху */
+    margin-left: 17px; /* Отступ слева для смещения вправо */
+    width: 100%; /* Полная ширина контейнера */
+    max-width: 50%; /* Уменьшенная максимальная ширина */
+}
+
+.details-text p {
+    margin: 10px 0; /* Ещё меньшие отступы между абзацами */
+    font-size: 6px; /* Ещё меньший размер шрифта */
+}
+
+	  .bottom-image {
+        width: 95%;
+        height: auto;
+        margin-right: 25px;
+     margin-bottom: -20px; /* Уменьшение отступа снизу, чтобы текст был ближе к картинки  */ 
+	  
+}
+#sobre13Btn {
+    font-size: 16px; 
+	 margin-right: 45px;
+	  margin-top: 40px; /* Отступ сверху */ 
+   }
+	  #ofreceBtn{
+	   font-size: 7px; 
+	   word-spacing: 2px;
+	    white-space: nowrap; /* Предотвращает перенос текста на новую строку */ 
+		  margin-left: -40px;
+		   margin-top: -20px;
+	   }
+	   #multidBtn{
+		  word-spacing: 2px;
+		  font-size: 7px; 
+		   white-space: nowrap; /* Предотвращает перенос текста на новую строку */ 
+		    margin-left: -20px;
+		 }  
+	   #ayudaBtn{ 
+		   font-size: 7px;
+		   word-spacing: 2px;
+		 white-space: nowrap; /* Предотвращает перенос текста на новую строку */ 
+		   margin-left: -40px;
+		   }
+	   #aspesBtn{
+		  font-size: 7px; 
+		  word-spacing: 2px;
+		   white-space: nowrap; /* Предотвращает перенос текста на новую строку */ 
+		     margin-left: -38px;
+			  margin-bottom: -60px; /* Уменьшение отступа снизу, чтобы текст был ближе к текусту  */
+		   }
+		    .package p.title {
+            
+            font-size: 14px; /* Увеличенный размер текста */
+             margin-right: 10px;
+			 white-space: nowrap; /* Предотвращение переноса текста */
+			  margin-bottom: 15px; /* Уменьшение отступа снизу, чтобы картинка был ближе к текусту  */
+			
+ }
+ 
+          .package img {
+            max-width: 35%;
+            height: auto;
+            margin-bottom: 30px;
+			margin-left: -10px;
+        }
+		 /* Индивидуальные стили для смещения текста */
+        #hacemosBtn { margin-left: -20px;  font-size: 11px;}
+        #presupuestoBtn { margin-left: -20px; font-size: 11px;}
+        #deseadasBtn { margin-left:-20px; margin-bottom: 30px; font-size: 11px;}
+		
+        #ademásBtn { margin-left: -20px; font-size: 11px;}
+        #expertoBtn { margin-left: -20px; font-size: 11px;}
+        #arrendamientoBtn { margin-left: -20px; font-size: 11px;}
+        #derechos777Btn { margin-left: -20px; font-size: 11px;}
+        #obligacionesBtn { margin-left: -20px; font-size: 11px;}
+        #cualquier1Btn { margin-left: -20px; font-size: 11px;}
+        #procesoBtn { margin-left: -20px; font-size: 11px;}
+		
+		
+		
+		 #deseanBtn { margin-left: -20px; font-size: 11px;}
+         #establecerseBtn { margin-left: -20px; font-size: 11px;}
+         #ofrecemosBtn { margin-left: -20px; font-size: 11px;}
+         #completoBtn { margin-left: -20px; font-size: 11px;}
+         #propiedades1Btn { margin-left: -20px; margin-bottom: 30px; font-size: 11px;}
+				
+         #inicialBtn { margin-left: -20px; font-size: 11px;}
+         #cierreBtn { margin-left: -20px; font-size: 11px;}
+         #estamosBtn { margin-left: -20px; font-size: 11px;}
+         #idealBtn { margin-left: -20px; font-size: 11px;}
+		 #cumplaBtn { margin-left: -20px; font-size: 11px;}
+         #nuestros12Btn { margin-left: -20px; margin-bottom: 30px; font-size: 11px;}
+				
+				
+         #equipoBtn { margin-left: -20px; font-size: 11px;}
+         #experto12Btn { margin-left: -20px; font-size: 11px;}
+         #evaluaciónBtn { margin-left: -20px; font-size: 11px;}
+         #trámitesBtn { margin-left: -20px; font-size: 11px;}
+         #financierosBtn { margin-left: -20px; font-size: 11px;}
+         #financieros888Btn { margin-left: -20px; margin-bottom: 30px;font-size: 11px; }
+		 
+         #garantizamosBtn { margin-left: -20px; font-size: 11px;}
+		 #estrésBtn { margin-left: -20px; font-size: 11px;}
+         #proceso121Btn { margin-left: -20px; font-size: 11px;}
+         #duranteBtn { margin-left: -20px; margin-bottom: 30px; font-size: 11px;}
+		
+		
+		
+		
+         #además1222Btn { margin-left: -20px; font-size: 11px;}
+         #tambiénBtn { margin-left: -20px; font-size: 11px;}
+         #erviciosBtn { margin-left: -20px; font-size: 11px;}
+         #cualquierBtn { margin-left: -20px; font-size: 11px;}
+         #necesidadesBtn { margin-left: -20px; font-size: 11px;}
+         #gustosBtn { margin-left: -20px; margin-bottom: 30px; font-size: 11px;}
+		 		
+         #seaBtn { margin-left: -20px; font-size: 11px;}
+		 #alizaciónBtn { margin-left: -20px; font-size: 11px;}
+         #profesionalesBtn { margin-left: -20px; font-size: 11px;}
+         #desdeBtn { margin-left: -20px; font-size: 11px;}
+         #hastaBtn { margin-left: -20px; font-size: 11px;}
+         #proyectoBtn { margin-left: -20px; font-size: 11px;}
+         #sea111Btn { margin-left: -20px; font-size: 11px;}
+         #alización111Btn { margin-left: -20px; margin-bottom: 30px; font-size: 11px;}
+				
+         #brindarteBtn { margin-left: -20px; font-size: 11px;}
+         #resultadosBtn { margin-left: -20px; font-size: 11px;}
+		 #superenBtn { margin-left: -20px; font-size: 11px;}
+         #transformenBtn { margin-left: -20px; font-size: 11px;}
+         #sueños1Btn { margin-left: -20px; font-size: 11px;}
+         #sueños1666Btn { margin-left: -20px; font-size: 11px; margin-bottom: -60px; /* Уменьшение отступа снизу, чтобы текст был ближе к текусту  */}
+		 
+		  #reseñasBtn{
+	
+	font-size: 14px; /* Увеличенный размер шрифта */
+	margin-left: -10px;
+	}
+
+.testimonial {
+            margin-left: 20px;
+        }
+		
+			/* Стили для текста "GALERIA" */
+.menu-item {
+    margin-left: -230px; /* Отступ справа от текста "NUESTRA EMPRESA" */
+    top: 15px; /* Смещение текста вверх (регулируйте по необходимости) */
+	  
+}
+ /* Стиль для текста "CONTACTOS" */
+.contact-text {
+    margin-left: -740px; /* Отступ справа от текста "NUESTRA EMPRESA" */
+    top: 20px; /* Смещение текста вверх (регулируйте по необходимости) */
+}
+
+
+/* Обертка для иконок */
+.wrapper {
+	margin-left: -140px; /* Отступ справа от текста "NUESTRA EMPRESA" */
+    top: 90px; /* Смещение текста вверх (регулируйте по необходимости) */
+}
+	  .testimonial-buttons .button {
+    font-size: 10px; /* Уменьшенный размер шрифта */
+    padding: 3px 6px; /* Уменьшенные внутренние отступы */
+    border-radius: 4px; /* Немного уменьшенный радиус скругления углов */
+    outline: 1px solid #b3a59d;
+    outline-offset: 0px;
+    background: #b3a59d;
+    border: 0;
+    font-weight: bold;
+    color: white;
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+}
+.testimonial button {
+    font-size: 10px; /* Уменьшенный размер шрифта */
+    padding: 3px 6px; /* Уменьшенные внутренние отступы */
+    border: 1px solid #b3a59d;
+    border-radius: 4px; /* Немного уменьшенный радиус скругления углов */
+    background-color: #b3a59d;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+    margin: 0 8px; /* Уменьшенный отступ между кнопками */
+}
+  .container {
+        max-width: 450px; /* Устанавливаем максимальную ширину */
+        margin: 0 auto;   /* Центрируем контейнер на экране */
+        width: 100%;      /* Делаем ширину контейнера 100%, чтобы он не превышал max-width */
+        padding: 0 15px;  /* Добавляем отступы по краям */
+    }
+
+	}
+	
+@media only screen and (max-width: 420px) 
+/* Ваши стили для устройств с шириной экрана до 420px */
+{
+			/* Стили для текста "GALERIA" */
+.menu-item {
+    margin-left: -210px; /* Отступ справа от текста "NUESTRA EMPRESA" */
+    top: 15px; /* Смещение текста вверх (регулируйте по необходимости) */
+	  
+
+
+
+}
+
+}
+
+
+@media only screen and (max-width: 415px) 
+/* Ваши стили для устройств с шириной экрана до 415px */
+{
+	
+ #sobreno1Btn {
+		 word-spacing: 1px;
+		  font-size: 6px; 
+		   margin-left: -45px; 
+		    white-space: nowrap; /* Предотвращает перенос текста на новую строку */  
+	 
+		 }
+		 #sobrnBtn {
+		word-spacing: 2px;  
+		 font-size: 6px;
+		 margin-left: -45px; 
+		    white-space: nowrap; /* Предотвращает перенос текста на новую строку */  
+	 
+		}
+		 #sobBtn {
+		 word-spacing: 2px; 
+		  font-size: 6px;
+		  margin-left: -45px; 
+		    
+		}
+		 #sob3Btn {
+			 word-spacing: 2px;
+			  font-size: 6px;
+			    margin-left: -30px; 
+				  white-space: nowrap; /* Предотвращает перенос текста на новую строку */  
+	
+			 }
+         #sso1Btn {
+			 word-spacing: 2px; 
+			  font-size: 6px;
+			  margin-left: -55px;
+	 white-space: nowrap; /* Предотвращает перенос текста на новую строку */  
+			 }
+		 #s99Btn {  
+		 word-spacing: 2px; 
+		  font-size: 6px;
+		  margin-left: 10px;
+		   white-space: nowrap; /* Предотвращает перенос текста на новую строку */  
+		 }	 
+		  #logrosBtn{
+		  font-size: 7px;
+		   word-spacing: 1px;
+		   margin-right: 200px;
+		 white-space: nowrap; /* Предотвращает перенос текста на новую строку */  
+	
+		  }
+		  .testimonial-buttons .button {
+    font-size: 10px; /* Уменьшенный размер шрифта */
+    padding: 3px 6px; /* Уменьшенные внутренние отступы */
+    border-radius: 4px; /* Немного уменьшенный радиус скругления углов */
+    outline: 1px solid #b3a59d;
+    outline-offset: 0px;
+    background: #b3a59d;
+    border: 0;
+    font-weight: bold;
+    color: white;
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+}
+.testimonial button {
+    font-size: 10px; /* Уменьшенный размер шрифта */
+    padding: 3px 6px; /* Уменьшенные внутренние отступы */
+    border: 1px solid #b3a59d;
+    border-radius: 4px; /* Немного уменьшенный радиус скругления углов */
+    background-color: #b3a59d;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+    margin: 0 8px; /* Уменьшенный отступ между кнопками */
+}
+
+	.menu button {
+    font-size: 8px;
+    margin-left: -5px; /* Сдвиг каждой кнопки вправо */
+    margin-right: -8px; /* Небольшое расстояние между кнопками */
+	 top: -30px;
+		  }
+		   }
+		   
+@media only screen and (max-width: 400px) 
+/* Ваши стили для устройств с шириной экрана до 400px */
+{
+	.testimonial {
+    margin-left: 8px;
+}
+		 /* Индивидуальные стили для смещения текста */
+        #hacemosBtn { margin-left: -20px;  font-size: 7px;}
+        #presupuestoBtn { margin-left: -20px; font-size: 7px;}
+        #deseadasBtn { margin-left:-20px; margin-bottom: 10px; font-size: 7px;}
+		
+        #ademásBtn { margin-left: -20px; font-size: 7px;}
+        #expertoBtn { margin-left: -20px;font-size: 7px;}
+        #arrendamientoBtn { margin-left: -20px; font-size: 7px;}
+        #derechos777Btn { margin-left: -20px; font-size: 7px;}
+        #obligacionesBtn { margin-left: -20px; font-size: 7px;}
+        #cualquier1Btn { margin-left: -20px; font-size: 7px;}
+        #procesoBtn { margin-left: -20px; font-size: 7px;}
+		
+		
+		
+		 #deseanBtn { margin-left: -20px; font-size: 7px;}
+         #establecerseBtn { margin-left: -20px; font-size: 7px;}
+         #ofrecemosBtn { margin-left: -20px; font-size: 7px;}
+         #completoBtn { margin-left: -20px; font-size: 7px;}
+         #propiedades1Btn { margin-left: -20px; margin-bottom: 10px; font-size: 7px;}
+				
+         #inicialBtn { margin-left: -20px; font-size: 7px;}
+         #cierreBtn { margin-left: -20px; font-size: 7px;}
+         #estamosBtn { margin-left: -20px; font-size: 7px;}
+         #idealBtn { margin-left: -20px; font-size: 7px;}
+		 #cumplaBtn { margin-left: -20px; font-size: 7px;}
+         #nuestros12Btn { margin-left: -20px; margin-bottom: 10px; font-size: 7px;}
+				
+				
+         #equipoBtn { margin-left: -20px; font-size: 7px;}
+         #experto12Btn { margin-left: -20px; font-size: 7px;}
+         #evaluaciónBtn { margin-left: -20px; font-size: 7px;}
+         #trámitesBtn { margin-left: -20px; font-size: 7px;}
+         #financierosBtn { margin-left: -20px; font-size: 7px;}
+         #financieros888Btn { margin-left: -20px; margin-bottom: 10px; font-size: 7px; }
+		 
+         #garantizamosBtn { margin-left: -20px; font-size: 7px;}
+		 #estrésBtn { margin-left: -20px; font-size: 7px;}
+         #proceso121Btn { margin-left: -20px; font-size: 7px;}
+         #duranteBtn { margin-left: -20px; margin-bottom: 10px; font-size: 7px;}
+		
+		
+		
+		
+         #además1222Btn { margin-left: -20px; font-size: 7px;}
+         #tambiénBtn { margin-left: -20px; font-size: 7px;}
+         #erviciosBtn { margin-left: -20px; font-size: 7px;}
+         #cualquierBtn { margin-left: -20px; font-size: 7px;}
+         #necesidadesBtn { margin-left: -20px; font-size: 7px;}
+         #gustosBtn { margin-left: -20px; margin-bottom: 10px; font-size: 7px;}
+		 		
+         #seaBtn { margin-left: -20px; font-size: 7px;}
+		 #alizaciónBtn { margin-left: -20px; font-size: 7px;}
+         #profesionalesBtn { margin-left: -20px; font-size: 7px;}
+         #desdeBtn { margin-left: -20px; font-size: 7px;}
+         #hastaBtn { margin-left: -20px; font-size: 7px;}
+         #proyectoBtn { margin-left: -20px; font-size: 7px;}
+         #sea111Btn { margin-left: -20px; font-size: 7px;}
+         #alización111Btn { margin-left: -20px; margin-bottom: 10px; font-size: 7px;}
+				
+         #brindarteBtn { margin-left: -20px; font-size: 7px;}
+         #resultadosBtn { margin-left: -20px; font-size: 7px;}
+		 #superenBtn { margin-left: -20px; font-size: 7px;}
+         #transformenBtn { margin-left: -20px; font-size: 7px;}
+         #sueños1Btn { margin-left: -20px; font-size: 7px;}
+         #sueños1666Btn { margin-left: -20px; font-size: 7px; margin-bottom: -60px; /* Уменьшение отступа снизу, чтобы текст был ближе к текусту  */}
+	
+	
+	
+	    #sobrenosotros1Btn {
+        font-size: 10px;
+        margin-right: 20px;
+    }
+	
+	
+	 #sobreno1Btn {
+		 word-spacing: 1px;
+		  font-size: 6px; 
+		   margin-left: -55px; 
+		    white-space: nowrap; /* Предотвращает перенос текста на новую строку */  
+	 
+		 }
+		 #sobrnBtn {
+		word-spacing: 2px;  
+		 font-size: 6px;
+		 margin-left:  -55px; 
+		    white-space: nowrap; /* Предотвращает перенос текста на новую строку */  
+	 
+		}
+		 #sobBtn {
+		 word-spacing: 2px; 
+		  font-size: 6px;
+		  margin-left:  -65px; 
+		    
+		}
+		 #sob3Btn {
+			 word-spacing: 2px;
+			  font-size: 6px;
+			    margin-left: -50px; 
+				  white-space: nowrap; /* Предотвращает перенос текста на новую строку */  
+	
+			 }
+         #sso1Btn {
+			 word-spacing: 2px; 
+			  font-size: 6px;
+			  margin-left: -70px;
+	 white-space: nowrap; /* Предотвращает перенос текста на новую строку */  
+			 }
+		 #s99Btn {  
+		 word-spacing: 2px; 
+		  font-size: 6px;
+		  margin-left: -10px;
+		   white-space: nowrap; /* Предотвращает перенос текста на новую строку */  
+		 }	 
+		 #sobre13Btn {
+        font-size: 10px;
+        margin-right: 70px;
+        margin-top: 40px;
+    }
+
+		 
+		 
+		   #ofreceBtn{
+	   font-size: 6.5px; 
+	   word-spacing: 2px;
+	    white-space: nowrap; /* Предотвращает перенос текста на новую строку */ 
+		  margin-left: -50px;
+		   margin-top: -20px;
+	   }
+	   #multidBtn{
+		  word-spacing: 2px;
+		  font-size: 6.5px; 
+		   white-space: nowrap; /* Предотвращает перенос текста на новую строку */ 
+		    margin-left: -40px;
+		 }  
+	   #ayudaBtn{ 
+		   font-size: 6.5px;
+		   word-spacing: 2px;
+		 white-space: nowrap; /* Предотвращает перенос текста на новую строку */ 
+		   margin-left: -50px;
+		   }
+	   #aspesBtn{
+		  font-size: 6.5px; 
+		  word-spacing: 2px;
+		   white-space: nowrap; /* Предотвращает перенос текста на новую строку */ 
+		     margin-left: -38px;
+			  margin-bottom: -60px; /* Уменьшение отступа снизу, чтобы текст был ближе к текусту  */
+		   }
+		 .centered-image {
+        width: 70%;
+        margin-right: 50px;
+        display: block;
+        position: relative;
+        top: -75px;
+        margin-bottom: -110px;
+    }
+		 
+		 
+		 			/* Стили для текста "GALERIA" */
+.menu-item {
+    margin-left: -190px; /* Отступ справа от текста "NUESTRA EMPRESA" */
+    top: 15px; /* Смещение текста вверх (регулируйте по необходимости) */
+	  
+}
+ /* Стиль для текста "CONTACTOS" */
+.contact-text {
+    margin-left: -690px; /* Отступ справа от текста "NUESTRA EMPRESA" */
+    top: 20px; /* Смещение текста вверх (регулируйте по необходимости) */
+}
+
+
+/* Обертка для иконок */
+.wrapper {
+	margin-left: -140px; /* Отступ справа от текста "NUESTRA EMPRESA" */
+    top: 90px; /* Смещение текста вверх (регулируйте по необходимости) */
+	
+}
+		.menu button {
+    font-size: 7px;
+    margin-left: -5px; /* Сдвиг каждой кнопки вправо */
+    margin-right: -8px; /* Небольшое расстояние между кнопками */
+	 top: -30px;
+}
+	.logo {
+	   max-width: 23%;	
+    top: 40px;
+    right  : 160px;
+	
+}
+
+#ventajasBtn {
+    font-size: 10px;
+    position: relative;
+    transform: translate(-5px, 5px);
+}
+                              .details-text {
+    width: 350px; /* Фиксированная ширина контейнера */
+    margin: 0 auto; /* Центрирование контейнера на странице */
+	 margin-top: 10px; /* Отступ сверху для перемещения элемента вниз */
+}
+
+.details-text p {
+    font-size: 7px; /* Размер шрифта */
+    line-height: 1.5; /* Междустрочный интервал */
+    text-align: left; /* Выравнивание текста по левому краю */
+    margin: 10px 0; /* Отступы между абзацами */
+    width: 100%; /* Занимает всю ширину контейнера */
+	 margin-left: -100px;
+}
+ 
+
+
+    #logrosBtn {
+        font-size: 7px;
+        word-spacing: 1px;
+        margin-left: -20px;
+        white-space: nowrap;
+    }
+.bottom-image {
+        width: 95%;
+        height: auto;
+        margin-right: 15px;
+        margin-bottom: -20px;
+    }
+.package p.title {
+        font-size: 10px;
+        margin-right: 10px;
+        white-space: nowrap;
+        margin-bottom: 15px;
+    }
+ 
+	}
+	  
+		   
+@media only screen and (max-width: 380px) 
+/* Ваши стили для устройств с шириной экрана до 380px */
+{
+	.logo {
+	   max-width: 25%;	
+    top: 35px;
+   left  : 120px;
+	
+}
+.language-button {
+    right  : -10px;
+	  font-size: 6px; /* Еще меньший размер шрифта */
+     top: -15px;
+}
+
+.button {
+	
+	   font-size: 6px; /* Еще меньший размер шрифта */
+    padding: 5px 10px; /* Уменьшение размера кнопки */
+	margin-right: 12px; /* Добавлен отступ справа */
+	top: 40; /* Размещаем кнопку в самом верху родительского контейнера */
+    right: 0; /* Размещаем кнопку справа в контейнере */
+        }
+		
+	.menu button {
+    font-size: 7px;
+    margin-left: -5px; /* Сдвиг каждой кнопки вправо */
+    margin-right: -10px; /* Небольшое расстояние между кнопками */
+	 top: -30px;
+}
+.centered-image {
+    width: 70%; /* Заменяем максимальную ширину на конкретное значение, чтобы увеличить изображение */
+    margin-right: 45px;
+       
+		}
+			.bottom-image {
+    width: 100%; /* Пример, уменьшает изображение до 150% от оригинального размера */
+    height: auto; /* Сохраняет пропорции изображения */
+	 margin-right: 40px;
+
+}
+  .package p.title {
+            
+            font-size: 14px; /* Увеличенный размер текста */
+             margin-right: -30px;
+			 white-space: nowrap; /* Предотвращение переноса текста */
+			
+ }
+ 
+          .package img {
+            max-width: 35%;
+            height: auto;
+            margin-bottom: 30px;
+			margin-left: 30px;
+        }
+		
+		 /* Индивидуальные стили для смещения текста */
+        #hacemosBtn { margin-left: 20px;  font-size: 10px;}
+        #presupuestoBtn { margin-left: 20px; font-size: 10px;}
+        #deseadasBtn { margin-left:20px; margin-bottom: 30px; font-size: 10px;}
+		
+        #ademásBtn { margin-left: 20px; font-size: 10px;}
+        #expertoBtn { margin-left: 20px; font-size: 10px;}
+        #arrendamientoBtn { margin-left: 20px; font-size: 10px;}
+        #derechos777Btn { margin-left: 20px; font-size: 10px;}
+        #obligacionesBtn { margin-left: 20px; font-size: 10px;}
+        #cualquier1Btn { margin-left: 20px; font-size: 10px;}
+        #procesoBtn { margin-left: 20px; font-size: 10px;}
+		
+		
+		
+		 #deseanBtn { margin-left: 20px; font-size: 10px;}
+         #establecerseBtn { margin-left: 20px; font-size: 10px;}
+         #ofrecemosBtn { margin-left: 20px; font-size: 10px;}
+         #completoBtn { margin-left: 20px; font-size: 10px;}
+         #propiedades1Btn { margin-left: 20px; margin-bottom: 30px; font-size: 10px;}
+				
+         #inicialBtn { margin-left: 20px; font-size: 10px;}
+         #cierreBtn { margin-left: 20px; font-size: 10px;}
+         #estamosBtn { margin-left: 20px; font-size: 10px;}
+         #idealBtn { margin-left: 20px; font-size: 10px;}
+		 #cumplaBtn { margin-left: 20px; font-size: 10px;}
+         #nuestros12Btn { margin-left: 20px; margin-bottom: 30px; font-size: 10px;}
+				
+				
+         #equipoBtn { margin-left: 20px; font-size: 10px;}
+         #experto12Btn { margin-left: 20px; font-size: 10px;}
+         #evaluaciónBtn { margin-left: 20px; font-size: 10px;}
+         #trámitesBtn { margin-left: 20px; font-size: 10px;}
+         #financierosBtn { margin-left: 20px; font-size: 10px;}
+         #financieros888Btn { margin-left: 20px; margin-bottom: 30px;font-size: 10px; }
+		 
+         #garantizamosBtn { margin-left: 20px; font-size: 10px;}
+		 #estrésBtn { margin-left: 20px; font-size: 10px;}
+         #proceso121Btn { margin-left: 20px; font-size: 10px;}
+         #duranteBtn { margin-left: 20px; margin-bottom: 30px; font-size: 10px;}
+		
+		
+		
+		
+         #además1222Btn { margin-left: 20px; font-size: 10px;}
+         #tambiénBtn { margin-left: 20px; font-size: 10px;}
+         #erviciosBtn { margin-left: 20px; font-size: 10px;}
+         #cualquierBtn { margin-left: 20px; font-size: 10px;}
+         #necesidadesBtn { margin-left: 20px; font-size: 10px;}
+         #gustosBtn { margin-left: 20px; margin-bottom: 30px; font-size: 10px;}
+		 		
+         #seaBtn { margin-left: 20px; font-size: 10px;}
+		 #alizaciónBtn { margin-left: 20px; font-size: 10px;}
+         #profesionalesBtn { margin-left: 20px; font-size: 10px;}
+         #desdeBtn { margin-left: 20px; font-size: 10px;}
+         #hastaBtn { margin-left: 20px; font-size: 10px;}
+         #proyectoBtn { margin-left: 20px; font-size: 10px;}
+         #sea111Btn { margin-left: 20px; font-size: 10px;}
+         #alización111Btn { margin-left: 20px; margin-bottom: 30px; font-size: 10px;}
+				
+         #brindarteBtn { margin-left: 20px; font-size: 10px;}
+         #resultadosBtn { margin-left: 20px;font-size: 10px;}
+		 #superenBtn { margin-left: 20px; font-size: 10px;}
+         #transformenBtn { margin-left: 20px; font-size: 10px;}
+         #sueños1Btn { margin-left: 20px; font-size: 10px;}
+         #sueños1666Btn { margin-left: 20px; font-size: 10px;}
+		 
+		 		 			/* Стили для текста "GALERIA" */
+.menu-item {
+    margin-left: -170px; /* Отступ справа от текста "NUESTRA EMPRESA" */
+    top: 15px; /* Смещение текста вверх (регулируйте по необходимости) */
+	  
+}
+#sobrenosotros1Btn {
+        font-size: 13px;
+        margin-right: 15px;
+    }
+	#logrosBtn {
+        font-size: 7px;
+        word-spacing: 1px;
+        margin-right: 260px;
+        white-space: nowrap;
+    }
+	.details-text {
+   
+    margin-left: 5px; /* Отступ слева для смещения вправо */
+  
+
+}
+}
+		   	
+@media only screen and (max-width: 350px) 
+/* Ваши стили для устройств с шириной экрана до 350px */
+{
+	
+	.logo {
+	   width: 90px;	
+    top: 55px;
+   left  : 120px;
+	
+}
+.language-button {
+    right  : -10px;
+	  font-size: 6px; /* Еще меньший размер шрифта */
+     top: 10px;
+}
+
+.button {
+	
+	   font-size: 6px; /* Еще меньший размер шрифта */
+    padding: 5px 10px; /* Уменьшение размера кнопки */
+	margin-right: 10px; /* Добавлен отступ справа */
+        }
+		
+		.menu button {
+    font-size: 6px;
+    margin-left: -5px; /* Сдвиг каждой кнопки вправо */
+    margin-right: 10px; /* Небольшое расстояние между кнопками */
+}
+.centered-image {
+    width: 70%; /* Заменяем максимальную ширину на конкретное значение, чтобы увеличить изображение */
+    margin-right: 40px;
+	}
+	#sobreno1Btn {
+		 word-spacing: 1px;
+		  font-size:5px; 
+		   margin-left: -55px; 
+		    white-space: nowrap; /* Предотвращает перенос текста на новую строку */  
+	 
+		 }
+		 #sobrnBtn {
+		word-spacing: 2px;  
+		 font-size: 5px;
+		 margin-left:  -55px; 
+		    white-space: nowrap; /* Предотвращает перенос текста на новую строку */  
+	 
+		}
+		 #sobBtn {
+		 word-spacing: 2px; 
+		  font-size: 5px;
+		  margin-left:  -55px; 
+		    
+		}
+		 #sob3Btn {
+			 word-spacing: 2px;
+			  font-size: 5px;
+			    margin-left: -55px; 
+				  white-space: nowrap; /* Предотвращает перенос текста на новую строку */  
+	
+			 }
+         #sso1Btn {
+			 word-spacing: 2px; 
+			  font-size: 5px;
+			  margin-left:-65px;
+	 white-space: nowrap; /* Предотвращает перенос текста на новую строку */  
+			 }
+		 #s99Btn {  
+		 word-spacing: 2px; 
+		  font-size: 5px;
+		  margin-left: -10px;
+		   white-space: nowrap; /* Предотвращает перенос текста на новую строку */  
+		 }	 
+	 #logrosBtn{
+		  font-size: 6px;
+		   word-spacing: 1px;
+		   margin-left: -20px;
+		 white-space: nowrap; /* Предотвращает перенос текста на новую строку */  
+	
+		  }
+        #ventajasBtn{
+		  font-size: 14px;
+		  margin-left: -200px;
+	  
+}
+
+.details-text {
+    padding: 2px; /* Ещё меньше внутренний отступ */
+    margin-top: 20px; /* Меньший отступ сверху */
+    margin-left: -15px; /* Меньший отступ слева для смещения вправо */
+    width: 70%; /* Уменьшенная ширина контейнера */
+    max-width: 55%; /* Ещё меньшая максимальная ширина */
+}
+
+.details-text p {
+    margin: 5px 0; /* Ещё меньшие отступы между абзацами */
+    font-size: 6px; /* Ещё меньший размер шрифта */
+}
+   	.bottom-image {
+    width: 100%; /* Пример, уменьшает изображение до 140% от оригинального размера */
+    height: auto; /* Сохраняет пропорции изображения */
+	 margin-right: 35px;
+
+}
+	#sobre13Btn {
+    font-size: 13px; 
+	 margin-right: 60px;
+	 margin-top: 50px;
+   }
+	  #ofreceBtn{
+		  margin-top: -20px;
+	   font-size: 6px; 
+	   word-spacing: 2px;
+	    white-space: nowrap; /* Предотвращает перенос текста на новую строку */ 
+		 margin-left: -68px;
+	   }
+	   #multidBtn{
+		  word-spacing: 2px;
+		  font-size: 6px; 
+		   white-space: nowrap; /* Предотвращает перенос текста на новую строку */ 
+		   margin-left: -68px;
+		 }  
+	   #ayudaBtn{ 
+		   font-size: 6px;
+		   word-spacing: 2px;
+		 white-space: nowrap; /* Предотвращает перенос текста на новую строку */ 
+		  margin-left: -60px;
+		   }
+	   #aspesBtn{
+		  font-size: 6px; 
+		  word-spacing: 2px;
+		   white-space: nowrap; /* Предотвращает перенос текста на новую строку */ 
+		    margin-left: -58px;
+		   }
+		   
+          .package img {
+            max-width: 35%;
+            height: auto;
+            margin-bottom: 30px;
+			margin-left: 20px;
+        }
+		    
+		/* Стили для текста "GALERIA" */
+.menu-item {
+    margin-left: -135px; /* Отступ справа от текста "NUESTRA EMPRESA" */
+    top: 30px; /* Смещение текста вверх (регулируйте по необходимости) */
+	  
+}
+
+
+
+/* Стиль для текста "CONTACTOS" */
+.contact-text {
+    margin-left: -630px; /* Отступ справа от текста "NUESTRA EMPRESA" */
+    top: 10px; /* Смещение текста вверх (регулируйте по необходимости) */
+}
+
+
+/* Обертка для иконок */
+.wrapper {
+	margin-left: -140px; /* Отступ справа от текста "NUESTRA EMPRESA" */
+    top: 70px; /* Смещение текста вверх (регулируйте по необходимости) */
+}
+	}
+	
+	
+	/* Ваши стили для устройств с шириной экрана до 450px */
+{
+	.logo {
+	   max-width: 25%;	
+    top: 40px;
+    right  : 150px;
+	
+}
+.language-button {
+    right  : -5px;
+	  font-size: 8px; /* Еще меньший размер шрифта */
+     top: -5px;
+}
+
+.button {
+	
+	   font-size: 8px; /* Еще меньший размер шрифта */
+    padding: 5px 10px; /* Уменьшение размера кнопки */
+	margin-right: 15px; /* Добавлен отступ справа */
+	  
+        }
+		
+		
+		.menu button {
+    font-size: 8px;
+    margin-left: -15px; /* Сдвиг каждой кнопки вправо */
+    margin-right: 20px; /* Небольшое расстояние между кнопками */
+	 top: -25px;
+}

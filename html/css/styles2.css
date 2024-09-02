@@ -1,0 +1,2164 @@
+body {   
+    background-color: #242323;
+    color: #ffffff; /* Text color */   
+    font-family: Arial, sans-serif;
+}
+header, nav, section, footer {
+    padding: 20px;
+}
+header h1, footer p {
+    text-align: center;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff; /* Link color */
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+header h1 {
+    font-size: 21px; /* Adjust the font size as needed */
+}
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Это предотвратит горизонтальную прокрутку */
+}
+
+.main-container {
+    width: 800px; /* Установите фиксированную ширину для основного контейнера */
+    margin: 0 auto; /* Центрирует контейнер по горизонтали */
+    padding: 0 20px; /* Внутренние отступы (опционально) */
+}
+.logo {
+    width: 150px;
+    height: auto;
+    margin: 10px; /* Adjust margin as needed */
+    position: absolute;
+    top: 15px;
+    right  : 530px;
+}
+.centered-image {
+    width: 70%; /* Заменяем максимальную ширину на конкретное значение, чтобы увеличить изображение */
+    height: auto; /* Сохраняем пропорции изображения */
+    display: block;
+    margin: auto;
+}
+.about-section {
+    text-align: center; /* Выравниваем текст по центру в секции */
+}
+.centered-content {
+    max-width: 950px;
+    margin: 0 auto;
+}
+.testimonial-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.testimonial-buttons .button {
+    font-size: 12px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    outline: 2px solid #b3a59d ;
+    outline-offset: 0px;
+    background: #b3a59d ;
+    border: 0;
+    font-weight: bolder;
+    color: white;
+    transition: all .1s ease-in-out;
+    cursor: pointer;
+}
+.testimonial-buttons .button:hover {
+    outline-offset: 3px;
+    outline: 3px solid #b3a59d;
+}
+
+ .language-buttons {
+    display: flex;
+    justify-content: flex-end; /* Выравнивание кнопок по правому краю */
+    padding: -5px;
+  
+}
+.language-buttons button {
+    font-size: 14px;
+    color: #e1e1e1;
+    font-family: inherit;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+    margin-left: 10px;
+	right  : -540px;
+}
+
+.language-buttons button:focus,
+.language-buttons button:hover {
+    color: #fff;
+}
+
+.language-buttons button:focus:after,
+.language-buttons button:hover:after {
+    width: 100%;
+    left: 0%;
+}
+        .language-buttons button:after {
+            content: "";
+            pointer-events: none;
+            bottom: -10px;
+            left: 50%;
+            position: absolute;
+            width: 0%;
+            height: 2px;
+            background-color: #fff;
+            transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+            transition-duration: 400ms;
+            transition-property: width, left;
+        }
+.language-buttons {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            top: 35px;
+            right: 765px;
+        }
+
+ .button {
+            font-size: 12px; /* Уменьшение размера шрифта */
+            padding: 8px 15px; /* Уменьшение размера кнопки */
+            border-radius: 5px;
+            outline: 2px solid #938676;
+            outline-offset: 0px;
+            background: #938676;
+            border: 0;
+            font-weight: bolder;
+            color: white;
+            transition: all .1s ease-in-out;
+            cursor: pointer;
+			margin: -155px; /* Коррекция отступа */
+			margin-right: 10px; /* Добавлен отступ справа */
+			  
+			
+			
+        }
+        .button:hover {
+            outline-offset: 3px;
+            outline: 3px solid #938676;
+			
+        }
+
+       
+.centered-buttons {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end; /* Выровнять кнопки по правой стороне */
+            width: 100%;
+            padding-right: 200px; /* Добавить отступ справа */
+
+        
+}
+        
+
+ .menu {
+            display: flex; /* Use flexbox */
+            justify-content: center; /* Center items horizontally */
+            list-style-type: none;
+            padding: 0;
+        }
+        .menu li {
+            margin: 0 5px; /* Add space between menu items */
+        }
+        .menu button {
+            font-size: 16px;
+            color: #e1e1e1;
+            font-family: inherit;
+            font-weight: 100;
+            cursor: pointer;
+            position: relative;
+            border: none;
+            background: none;
+            text-transform: uppercase;
+            transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+            transition-duration: 400ms;
+            transition-property: color;
+        }
+        .menu button:focus,
+        .menu button:hover {
+            color: #fff;
+        }
+        .menu button:focus:after,
+        .menu button:hover:after {
+            width: 100%;
+            left: 0%;
+        }
+        .menu button:after {
+            content: "";
+            pointer-events: none;
+            bottom: -2px;
+            left: 50%;
+            position: absolute;
+            width: 0%;
+            height: 2px;
+            background-color: #fff;
+            transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+            transition-duration: 400ms;
+            transition-property: width, left;
+        }
+
+
+
+
+ .underline {
+    font-weight:  bold; /* Делает текст жирным */
+}
+
+.chocolate-classical-sans-regular {
+  font-family: "Chocolate Classical Sans", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+	p, h2, h1,h3{	
+ font-family: "Chocolate Classical Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+ .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .image-gallery img {
+            width: 100px; /* Измените ширину по необходимости */
+            height: auto; /* Автоматическая высота, сохраняя пропорции */
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+/* Стиль для текста "CONTACTOS" */
+.contact-text {
+   
+   
+	 font-size: 15px; /* Размер шрифта текста */
+    color: #AF9562; /* Цвет шрифта текста */
+    margin-left: -1390px; /* Отступ справа от текста "NUESTRA EMPRESA" */
+	 position: relative;
+    top: -10px; /* Смещение текста вверх (регулируйте по необходимости) */
+}
+
+
+
+/* Обертка для иконок */
+.wrapper {
+    display: inline-flex;
+    list-style: none;
+    justify-content: center;
+    gap: 10px; /* Уменьшение расстояния между иконками */
+    padding: 0;
+	 margin-left: -140px; /* Отступ справа от текста "NUESTRA EMPRESA" */
+			 position: relative;
+             top: 50px; /* Смещение текста вверх (регулируйте по необходимости) */
+}
+
+/* Стили для иконок */
+.wrapper .icon {
+    position: relative;
+    background: #fff;
+    border-radius: 50%;
+    width: 40px; /* Уменьшение ширины кнопок */
+    height: 40px; /* Уменьшение высоты кнопок */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    background-size: cover;
+    background-position: center;
+}
+
+
+        .wrapper .tooltip {
+            position: absolute;
+            top: 0;
+            font-size: 14px;
+            background: #fff;
+            color: #fff;
+            padding: 5px 8px;
+            border-radius: 5px;
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+
+        .wrapper .tooltip::before {
+            position: absolute;
+            content: "";
+            height: 8px;
+            width: 8px;
+            background: #fff;
+            bottom: -3px;
+            left: 50%;
+            transform: translate(-50%) rotate(45deg);
+            transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+
+        .wrapper .icon:hover .tooltip {
+            top: -45px;
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+        }
+
+        .wrapper .icon:hover span,
+        .wrapper .icon:hover .tooltip {
+            text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+        }
+
+        .wrapper .whatsapp:hover,
+        .wrapper .whatsapp:hover .tooltip,
+        .wrapper .whatsapp:hover .tooltip::before {
+            background: #25d366;
+            color: #fff;
+        }
+
+        .wrapper .telegram:hover,
+        .wrapper .telegram:hover .tooltip,
+        .wrapper .telegram:hover .tooltip::before {
+            background: #0088cc;
+            color: #fff;
+        }
+
+        .wrapper .email:hover,
+        .wrapper .email:hover .tooltip,
+        .wrapper .email:hover .tooltip::before {
+            background: #ea4335;
+            color: #fff;
+        }
+		
+		
+
+       /* Стили для фоновых изображений и логотипов */
+.wrapper .whatsapp {
+    background-image: url("C:\Users\alina\OneDrive\Рабочий стол\html\source\logowhatsapp.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper .telegram {
+    background-image: url("C:\Users\alina\OneDrive\Рабочий стол\html\source\logotelegram.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper .email {
+    background-image: url("C:\Users\alina\OneDrive\Рабочий стол\html\source\logoemail.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+        .wrapper .icon span {
+            position: absolute;
+            color: #fff;
+        }
+.wrapper .phone:hover,
+.wrapper .phone:hover .tooltip,
+.wrapper .phone:hover .tooltip::before {
+    background-color: #1E90FF; /* Цвет фона при наведении */
+    color: #fff ; /* Цвет текста при наведении */
+}
+
+.wrapper .phone {
+     background-image: url("source\logomoba.jpg"); /* Путь к изображению логотипа */
+    background-size: cover; /* Растягиваем изображение на всю кнопку */
+    background-position: center; /* Центрируем изображение */
+    border-radius: 50%; /* Делаем круглый фон */
+	 background-color: #1E90FF; /* Цвет фона для кнопки телефона */
+}
+
+p.underline {
+    font-size: 1.2em; /* Увеличьте размер текста по вашему желанию */
+}
+
+ .footer-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 250px; /* Установите маленький размер для изображения */
+    height: auto;
+}
+
+#language-selection {
+    display: flex;
+    justify-content: flex-end;
+    margin: 40px;
+    margin-right: 5px;
+}
+
+.language-button {
+    font-size: 12px;
+    color: #e1e1e1; /* Цвет текста */
+    font-family: inherit;
+    font-weight: 100;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+    margin: 0 5px; /* Отступы между кнопками */
+    padding: 2px 8px; /* Отступы внутри кнопки */
+}
+
+.language-button:hover,
+.language-button.active {
+    color: #ffffff; /* Цвет текста при наведении или активации */
+}
+
+.language-button::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: #ff0000; /* Цвет линии */
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Расположение линии под кнопкой */
+    transition: width 0.3s ease;
+}
+
+.language-button.active::after {
+    width: 100%;
+}
+
+/* Стили для контейнера с логотипом и иконками */
+.contact-wrapper {
+    display: flex;
+    align-items: center;
+    /* Добавляем отступы вокруг контейнера, если нужно */
+    padding: 10px; /* Измените по необходимости */
+}
+
+/* Стили для логотипа */
+.contact-logo {
+    width: 170px; /* Увеличенный размер логотипа */
+    height: auto;
+    margin-right: 20px; /* Расстояние между логотипом и иконками */
+	 margin-left: -80px; /* Расстояние от левого края контейнера */
+	 transform: translateY(-80px); /* Позиционирование логотипа выше (отрицательное значение) */
+}
+/* Стили для контейнера иконок */
+.icons-wrapper {
+    display: flex;
+    gap: 15px; /* Расстояние между иконками */
+}
+
+/* Общие стили для иконок */
+.icon {
+    cursor: pointer;
+    position: relative;
+}
+
+/* Стили для тултипа */
+.icon .tooltip {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap; /* Чтобы текст в тултипе не переносился */
+}
+
+.icon:hover .tooltip {
+    display: block;
+}
+
+
+.logo-text {
+    font-size: 15px; /* Размер шрифта текста */
+    color: #AF9562; /* Цвет шрифта текста */
+	line-height: 1; /* Установить line-height для лучшего выравнивания */
+    margin-top: 10px; /* Смещение текста вверх, если нужно */
+	  margin-left: -175px; /* Отступ справа от логотипа */
+	 
+}
+/* Стили для ссылок под текстом */
+.link-group {
+    margin-top: 185px; /* Небольшой отступ сверху для ссылок */
+    display: flex;
+    flex-direction: column; /* Расположение ссылок в столбик */
+    gap: 15px; /* Расстояние между ссылками */
+	 margin-left: -145px; /* Отступ справа от логотипа */
+	 
+    align-items: flex-start; /* Выравнивание кнопок по левому краю */
+	 
+}
+
+.nav-link {
+    background: none; /* Убираем фон */
+    border: none; /* Убираем границу */
+    color: #ffffff; /* Цвет текста */
+    font-size: 15px; /* Размер шрифта */
+    text-align: left; /* Выравнивание текста по левому краю */
+    margin-bottom: -2px; /* Минимальный отступ между кнопками */
+    cursor: pointer; /* Курсор при наведении */
+    padding: 0; /* Убираем внутренние отступы */
+    transition: color 0.3s ease; /* Плавный переход цвета */
+    text-decoration: none; /* Убираем подчеркивание текста */
+    position: relative;
+    top: 10px; /* Смещение текста вверх (регулируйте по необходимости) */
+    margin-left: -2px; /* Отступ слева */
+}
+
+
+
+
+.nav-link:hover {
+    background-color: #8A6E53; /* Цвет фона при наведении */
+}
+
+.nav-link:hover {
+    text-decoration: underline; /* Подчёркивание текста при наведении */
+}
+
+/* Стили для текста "GALERIA" */
+.menu-item {
+    font-size: 15px; /* Размер шрифта текста */
+    color: #AF9562; /* Цвет шрифта текста */
+    margin-left: -980px; /* Отступ справа от текста "NUESTRA EMPRESA" */
+	 position: relative;
+    top: 20px; /* Смещение текста вверх (регулируйте по необходимости) */
+	  
+}
+
+
+ 
+/* Стили для кнопок галереи */
+.gallery-buttons {
+	 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Выравнивание кнопок по левому краю */
+    margin-top: 210px; /* Отступ сверху от предыдущего элемента */
+	 margin-left: -635px;
+}
+
+.gallery-button {
+    background: none; /* Убираем фон */
+    border: none; /* Убираем границу */
+    color: #ffffff ; /* Цвет текста, как у вашего заголовка */
+    font-size: 15px; /* Размер шрифта */
+    text-align: left; /* Выравнивание текста по левому краю */
+    margin-bottom: 10px; /* Отступ между кнопками */
+    cursor: pointer; /* Курсор при наведении */
+    padding: 0; /* Убираем внутренние отступы */
+    transition: color 0.3s ease; /* Плавный переход цвета */
+	 gap: 20px; /* Расстояние между ссылками */
+	 text-decoration: none; /* Убираем подчеркивание текста */
+	 margin-left: 580px; /* Отступ справа от текста "NUESTRA EMPRESA" */
+	 position: relative;
+    top: -180px; /* Смещение текста вверх (регулируйте по необходимости) */
+}
+
+.gallery-button:hover {
+    color: #8A6E53; /* Цвет текста при наведении */
+}
+
+
+
+
+ 
+   
+ .image-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px; /* Расстояние между изображениями */
+    }
+
+    .image-container img {
+        max-width: 30%; /* Устанавливаем ширину изображения в зависимости от ширины контейнера */
+        height: auto;
+        border-radius: 5px; /* Закругление углов, если нужно */
+    }
+
+#Photo88Btn{
+	width: 280px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	 flex-wrap: wrap; /* Позволяет изображениям переходить на следующую строку */
+	
+	}
+#Photo103Btn{
+	width: 280px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	 flex-wrap: wrap; /* Позволяет изображениям переходить на следующую строку */
+	
+	}
+	#Photo66Btn{
+	width: 280px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	 flex-wrap: wrap; /* Позволяет изображениям переходить на следующую строку */
+	
+	}
+	#Photo101Btn{
+	width: 280px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	 flex-wrap: wrap; /* Позволяет изображениям переходить на следующую строку */
+	 margin-top: 15px;"
+	}
+	#Photo100Btn{
+	width: 280px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	 flex-wrap: wrap; /* Позволяет изображениям переходить на следующую строку */
+	 margin-top: 15px;"
+	}
+	#Photo55Btn{
+	width: 280px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	 flex-wrap: wrap; /* Позволяет изображениям переходить на следующую строку */
+	 margin-top: 15px;"
+	}
+	#Photo451Btn{
+	width: 280px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	 flex-wrap: wrap; /* Позволяет изображениям переходить на следующую строку */
+	
+	}
+	
+	#Photo991Btn{
+	width: 280px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	 flex-wrap: wrap; /* Позволяет изображениям переходить на следующую строку */
+	 
+	}
+	
+	#Photo441Btn{
+	width: 280px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	 flex-wrap: wrap; /* Позволяет изображениям переходить на следующую строку */
+	
+	}
+	
+	#Photo4513Btn{
+	width: 280px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	
+	
+	}
+	
+	#Photo5333Btn{
+	width: 280px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	 flex-wrap: wrap; /* Позволяет изображениям переходить на следующую строку */
+	
+	}
+	
+	#Photo6664Btn{
+	width: 280px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	
+	
+	}
+	
+	
+	
+	#Photo112Btn{
+	width: 300px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	 flex-wrap: wrap; /* Позволяет изображениям переходить на следующую строку */
+	 margin-top: -30px;"
+	}
+	#Photo110Btn{
+	width: 300px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	 flex-wrap: wrap; /* Позволяет изображениям переходить на следующую строку */
+	 margin-top: -30px;"
+	}
+	#Photo109Btn{
+	width: 300px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	margin-top: -40px;"
+	
+	}
+	#Photo108Btn{
+	width: 300px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+margin-top: -40px;"
+	}
+	#Photo1178Btn{
+	width: 230px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	}
+	#Photo1060Btn{
+	width: 230px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	}
+	#Photo1000Btn{
+	width: 230px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+
+	
+}
+#Photo44Btn{
+	width: 230px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+}
+#Photo33Btn{
+	width: 230px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+}
+#Photo22Btn{
+	width: 230px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+}
+#Photo11Btn{
+	width: 230px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	margin-top: 10px;"
+}
+#Photo45Btn{
+	width: 230px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	margin-top: 10px;"
+}
+#Photo99Btn{
+	width: 230px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	margin-top: 10px;"
+}
+
+#Photo129Btn{
+	width: 300px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	margin-top: 20px;"
+}
+#Photo1010Btn{
+	width: 300px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	margin-top: 20px;"
+}
+#Photo1111Btn{
+	width: 300px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	margin-top: 20px;
+	 margin-left: -310px; 
+}
+
+	
+	
+	
+	 
+	 
+	@media only screen and (max-width: 1024px) 
+{
+				.logo {
+    top: 60px;
+    right  : 410px;
+	width: 150px;
+	
+}
+	
+	/* Стили для текста "GALERIA" */
+.menu-item {
+    margin-left: -790px; /* Отступ справа от текста "NUESTRA EMPRESA" */
+    top: 20px; /* Смещение текста вверх (регулируйте по необходимости) */
+	  
+}
+
+
+
+/* Стиль для текста "CONTACTOS" */
+.contact-text {
+    margin-left: -1170px; /* Отступ справа от текста "NUESTRA EMPRESA" */
+    top: -10px; /* Смещение текста вверх (регулируйте по необходимости) */
+}
+
+
+/* Обертка для иконок */
+.wrapper {
+	margin-left: -130px; /* Отступ справа от текста "NUESTRA EMPRESA" */
+    top: 55px; /* Смещение текста вверх (регулируйте по необходимости) */
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Предотвращение горизонтальной прокрутки */
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box; /* Учитывает паддинги и границы в ширине контейнера */
+}
+
+
+
+	
+	}
+	
+	
+	 /* Адаптивность для экранов больше  912px */
+@media only screen and (max-width: 912px) 
+{
+				.logo {
+    top: 60px;
+    right  : 380px;
+	width: 150px;
+	
+}
+#Photo451Btn{
+	width: 230px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	 flex-wrap: wrap; /* Позволяет изображениям переходить на следующую строку */
+	
+	}
+	
+	#Photo991Btn{
+	width: 230px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	 flex-wrap: wrap; /* Позволяет изображениям переходить на следующую строку */
+	 
+	}
+	
+	#Photo441Btn{
+	width: 230px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	 flex-wrap: wrap; /* Позволяет изображениям переходить на следующую строку */
+	
+	}
+	
+	#Photo4513Btn{
+	width: 230px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	 flex-wrap: wrap; /* Позволяет изображениям переходить на следующую строку */
+	 margin-top: -30px;"
+	}
+	
+	#Photo5333Btn{
+	width: 230px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	 flex-wrap: wrap; /* Позволяет изображениям переходить на следующую строку */
+	 margin-top: -30px;"
+	}
+	
+	#Photo6664Btn{
+	width: 230px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	 flex-wrap: wrap; /* Позволяет изображениям переходить на следующую строку */
+	 margin-top: -30px;"
+	}
+
+
+
+	/* Стили для текста "GALERIA" */
+.menu-item {
+    margin-left: -680px; /* Отступ справа от текста "NUESTRA EMPRESA" */
+    top: 15px; /* Смещение текста вверх (регулируйте по необходимости) */
+	  
+}
+
+
+/* Стиль для текста "CONTACTOS" */
+.contact-text {
+    margin-left: -1050px; /* Отступ справа от текста "NUESTRA EMPRESA" */
+    top: 20px; /* Смещение текста вверх (регулируйте по необходимости) */
+}
+
+
+/* Обертка для иконок */
+.wrapper {
+	margin-left: -140px; /* Отступ справа от текста "NUESTRA EMPRESA" */
+    top: 90px; /* Смещение текста вверх (регулируйте по необходимости) */
+}
+	}
+		
+	/* Адаптивность для экранов больше  860px */
+@media only screen and (max-width: 860px) 
+{
+	#Photo451Btn{
+	width: 200px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	 flex-wrap: wrap; /* Позволяет изображениям переходить на следующую строку */
+	
+	}
+	
+	#Photo991Btn{
+	width: 200px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	 flex-wrap: wrap; /* Позволяет изображениям переходить на следующую строку */
+	 
+	}
+	
+	#Photo441Btn{
+	width: 200px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	 flex-wrap: wrap; /* Позволяет изображениям переходить на следующую строку */
+	
+	}
+	
+	#Photo4513Btn{
+	width: 200px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	 flex-wrap: wrap; /* Позволяет изображениям переходить на следующую строку */
+	 margin-top: -30px;"
+	}
+	
+	#Photo5333Btn{
+	width: 200px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	 flex-wrap: wrap; /* Позволяет изображениям переходить на следующую строку */
+	 margin-top: -30px;"
+	}
+	
+	#Photo6664Btn{
+	width: 200px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	 flex-wrap: wrap; /* Позволяет изображениям переходить на следующую строку */
+	 margin-top: -30px;"
+	}
+	#Photo1178Btn{
+	width: 200px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	}
+	#Photo1060Btn{
+	width: 200px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	}
+	#Photo1000Btn{
+	width: 200px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	
+}
+#Photo44Btn{
+	width: 200px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+}
+#Photo33Btn{
+	width: 200px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+}
+#Photo22Btn{
+	width: 200px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+}
+#Photo11Btn{
+	width: 200px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+}
+#Photo45Btn{
+	width: 200px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+}
+#Photo99Btn{
+	width: 200px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+}
+
+#Photo129Btn{
+	width: 230px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	margin-top: 20px;"
+}
+#Photo1010Btn{
+	width: 230px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	margin-top: 20px;"
+}
+#Photo1111Btn{
+	width: 230px; 
+	height: auto; 
+	margin-right: -60px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	margin-top: 20px;"
+}
+	
+	
+				.logo {
+    top: 60px;
+    right  : 350px;
+	width: 150px;
+	
+}
+	/* Стили для текста "GALERIA" */
+.menu-item {
+    margin-left: -605px; /* Отступ справа от текста "NUESTRA EMPRESA" */
+    top: 15px; /* Смещение текста вверх (регулируйте по необходимости) */
+	  
+}
+/* Стиль для текста "CONTACTOS" */
+.contact-text {
+    margin-left: -980px; /* Отступ справа от текста "NUESTRA EMPRESA" */
+    top: 20px; /* Смещение текста вверх (регулируйте по необходимости) */
+}
+
+
+/* Обертка для иконок */
+.wrapper {
+	margin-left: -140px; /* Отступ справа от текста "NUESTRA EMPRESA" */
+    top: 90px; /* Смещение текста вверх (регулируйте по необходимости) */
+}
+	}
+	
+		/* Адаптивность для экранов больше  840px */
+@media only screen and (max-width: 840px) 
+{
+	#Photo1111Btn{
+	width: 230px; 
+	height: auto; 
+	margin-right: -60px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	margin-top: 20px;"
+}
+	
+	
+			.logo {
+    top: 60px;
+    right  : 330px;
+	width: 120px;
+	
+}
+		/* Стили для текста "GALERIA" */
+.menu-item {
+    margin-left: -570px; /* Отступ справа от текста "NUESTRA EMPRESA" */
+    top: 15px; /* Смещение текста вверх (регулируйте по необходимости) */
+	  
+}
+ /* Стиль для текста "CONTACTOS" */
+.contact-text {
+    margin-left: -950px; /* Отступ справа от текста "NUESTRA EMPRESA" */
+    top: 20px; /* Смещение текста вверх (регулируйте по необходимости) */
+}
+
+
+/* Обертка для иконок */
+.wrapper {
+	margin-left: -140px; /* Отступ справа от текста "NUESTRA EMPRESA" */
+    top: 90px; /* Смещение текста вверх (регулируйте по необходимости) */
+}
+	}
+		/* Адаптивность для экранов больше  800px */
+@media only screen and (max-width: 780px) 
+{
+			.logo {
+    top: 60px;
+    right  : 300px;
+	width: 120px;
+	
+}
+				/* Стили для текста "GALERIA" */
+.menu-item {
+    margin-left: -535px; /* Отступ справа от текста "NUESTRA EMPRESA" */
+    top: 15px; /* Смещение текста вверх (регулируйте по необходимости) */
+	  
+}
+ }
+ 
+ /* Адаптивность для экранов больше 560px */
+@media only screen and (max-width: 560px) 
+{
+		header h1 {
+    font-size: 18px; /* Adjust the font size as needed */
+	margin-right: -10px;
+	}
+	#apartamentoBtn{
+		margin-right: -10px;
+		 
+font-size: 18px; /* Adjust the font size as needed */
+	}
+   #valenciBtn{
+	margin-right: 20px;
+		 font-size: 18px; /* Adjust the font size as needed */
+	}
+	 #cánovasBtn{
+	margin-right: -10px;
+		 font-size: 18px; /* Adjust the font size as needed */
+	}
+	
+	
+			#Photo88Btn{
+	width: 280px; 
+	height: auto; 
+	margin-right: 5px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	 flex-wrap: wrap; /* Позволяет изображениям переходить на следующую строку */
+	
+	
+	}
+#Photo103Btn{
+	width: 280px; 
+	height: auto; 
+	margin-right: 5px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	 flex-wrap: wrap; /* Позволяет изображениям переходить на следующую строку */
+	
+	}
+	#Photo66Btn{
+	width: 280px; 
+	height: auto; 
+	margin-right: 5px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	 flex-wrap: wrap; /* Позволяет изображениям переходить на следующую строку */
+	
+	}
+	#Photo101Btn{
+	width: 280px; 
+	height: auto; 
+	margin-right: 5px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	 flex-wrap: wrap; /* Позволяет изображениям переходить на следующую строку */
+	 margin-top: 15px;"
+	}
+	#Photo100Btn{
+	width: 280px; 
+	height: auto; 
+	margin-right: 5px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	 flex-wrap: wrap; /* Позволяет изображениям переходить на следующую строку */
+	 margin-top: 15px;"
+	}
+	#Photo55Btn{
+	width: 280px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	 flex-wrap: wrap; /* Позволяет изображениям переходить на следующую строку */
+	 margin-top: 15px;"
+	}
+	#Photo451Btn{
+	width: 120px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	 flex-wrap: wrap; /* Позволяет изображениям переходить на следующую строку */
+	
+	}
+	
+	#Photo991Btn{
+	width: 120px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	 flex-wrap: wrap; /* Позволяет изображениям переходить на следующую строку */
+	 
+	}
+	
+	#Photo441Btn{
+	width: 120px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	 flex-wrap: wrap; /* Позволяет изображениям переходить на следующую строку */
+	
+	}
+	
+	#Photo4513Btn{
+	width: 120px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	 flex-wrap: wrap; /* Позволяет изображениям переходить на следующую строку */
+	 margin-top: -30px;"
+	}
+	
+	#Photo5333Btn{
+	width: 120px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	 flex-wrap: wrap; /* Позволяет изображениям переходить на следующую строку */
+	 margin-top: -30px;"
+	}
+	
+	#Photo6664Btn{
+	width: 120px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	 flex-wrap: wrap; /* Позволяет изображениям переходить на следующую строку */
+	 margin-top: -30px;"
+	}
+	
+	
+	
+	#Photo112Btn{
+	width: 180px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	 flex-wrap: wrap; /* Позволяет изображениям переходить на следующую строку */
+	 margin-top: -30px;"
+	}
+	#Photo110Btn{
+	width: 180px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	 flex-wrap: wrap; /* Позволяет изображениям переходить на следующую строку */
+	 margin-top: -30px;"
+	}
+	#Photo109Btn{
+	width: 180px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	margin-top: -40px;"
+	
+	}
+	#Photo108Btn{
+	width: 180px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+margin-top: -40px;"
+	}
+	#Photo1178Btn{
+	width: 115px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	}
+	#Photo1060Btn{
+	width: 115px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	}
+	#Photo1000Btn{
+	width: 115px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+
+	
+}
+#Photo44Btn{
+	width: 115px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+}
+#Photo33Btn{
+	width: 115px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+}
+#Photo22Btn{
+	width: 115px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+}
+#Photo11Btn{
+	width: 115px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+}
+#Photo45Btn{
+	width: 115px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+}
+#Photo99Btn{
+	width: 115px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+}
+
+#Photo129Btn{
+	width: 120px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	margin-top: 20px;"
+}
+#Photo1010Btn{
+	width: 120px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	margin-top: 20px;"
+}
+#Photo1111Btn{
+	width: 120px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	margin-top: 20px;
+	 margin-left: -130px; 
+}
+	
+	
+	
+		.logo {
+    top: 60px;
+    right  : 190px;
+	width: 120px;
+	
+}
+.language-button {
+    right  : 10px;
+	  font-size: 8px; /* Еще меньший размер шрифта */
+     top: 5px;
+}
+
+.button {
+	
+	   font-size: 10px; /* Еще меньший размер шрифта */
+    padding: 5px 10px; /* Уменьшение размера кнопки */
+			margin-right: 20px; /* Добавлен отступ справа */
+        }
+			.menu button {
+    font-size: 10px;
+    margin-left: -15px; /* Сдвиг каждой кнопки вправо */
+    margin-right: 5px; /* Небольшое расстояние между кнопками */
+}
+
+
+
+	.menu-item {
+    margin-left: -310px; /* Отступ справа от текста "NUESTRA EMPRESA" */
+    top: 15px; /* Смещение текста вверх (регулируйте по необходимости) */
+	  
+}
+ /* Стиль для текста "CONTACTOS" */
+.contact-text {
+    margin-left: -730px; /* Отступ справа от текста "NUESTRA EMPRESA" */
+    top: 20px; /* Смещение текста вверх (регулируйте по необходимости) */
+}
+
+
+/* Обертка для иконок */
+.wrapper {
+	margin-left: -140px; /* Отступ справа от текста "NUESTRA EMPRESA" */
+    top: 90px; /* Смещение текста вверх (регулируйте по необходимости) */
+}
+	}
+	
+		/* Адаптивность для экранов больше  450px */
+@media only screen and (max-width: 450px) 
+{
+				header h1 {
+    font-size: 16px; /* Adjust the font size as needed */
+	margin-right: -10px;
+	margin-top: 60px;
+	}
+	#apartamentoBtn{
+		margin-right: -10px;
+		 font-size: 16px; /* Adjust the font size as needed */
+	}
+   #valenciBtn{
+	margin-right: 20px;
+		 font-size: 16px; /* Adjust the font size as needed */
+	}
+	 #cánovasBtn{
+	margin-right: -10px;
+		 font-size: 16px; /* Adjust the font size as needed */
+	}
+	
+	
+			#Photo88Btn{
+	width: 100px; 
+	height: auto; 
+	margin-right: 5px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	 flex-wrap: wrap; /* Позволяет изображениям переходить на следующую строку */
+	margin-top: 20px;
+	
+	}
+#Photo103Btn{
+	width: 100px; 
+	height: auto; 
+	margin-right: 5px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	 flex-wrap: wrap; /* Позволяет изображениям переходить на следующую строку */
+	margin-top: 20px;
+	}
+	#Photo66Btn{
+	width: 100px; 
+	height: auto; 
+	margin-right: 5px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	 flex-wrap: wrap; /* Позволяет изображениям переходить на следующую строку */
+	 margin-top: 15px;
+	}
+	#Photo101Btn{
+	width: 100px; 
+	height: auto; 
+	margin-right: 5px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	 flex-wrap: wrap; /* Позволяет изображениям переходить на следующую строку */
+	
+	}
+	#Photo100Btn{
+	width: 100px; 
+	height: auto; 
+	margin-right: 5px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	 flex-wrap: wrap; /* Позволяет изображениям переходить на следующую строку */
+	
+	}
+	#Photo55Btn{
+	width: 100px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	 flex-wrap: wrap; /* Позволяет изображениям переходить на следующую строку */
+	
+	}
+	#Photo451Btn{
+	width: 100px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	 flex-wrap: wrap; /* Позволяет изображениям переходить на следующую строку */
+	
+	}
+	
+	#Photo991Btn{
+	width: 100px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	 flex-wrap: wrap; /* Позволяет изображениям переходить на следующую строку */
+	 
+	}
+	
+	#Photo441Btn{
+	width: 100px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	 flex-wrap: wrap; /* Позволяет изображениям переходить на следующую строку */
+	
+	}
+	
+	#Photo4513Btn{
+	width: 100px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	 flex-wrap: wrap; /* Позволяет изображениям переходить на следующую строку */
+	 margin-top: -30px;"
+	}
+	
+	#Photo5333Btn{
+	width: 100px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	 flex-wrap: wrap; /* Позволяет изображениям переходить на следующую строку */
+	 margin-top: -30px;"
+	}
+	
+	#Photo6664Btn{
+	width: 100px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	 flex-wrap: wrap; /* Позволяет изображениям переходить на следующую строку */
+	 margin-top: -30px;"
+	}
+	
+	
+	
+	#Photo112Btn{
+	width: 150px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	 flex-wrap: wrap; /* Позволяет изображениям переходить на следующую строку */
+	 margin-top: -30px;"
+	}
+	#Photo110Btn{
+	width: 150px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	 flex-wrap: wrap; /* Позволяет изображениям переходить на следующую строку */
+	 margin-top: -30px;"
+	}
+	#Photo109Btn{
+	width: 150px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	margin-top: -40px;"
+	
+	}
+	#Photo108Btn{
+	width: 150px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+margin-top: -40px;"
+	}
+	#Photo1178Btn{
+	width: 100px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	}
+	#Photo1060Btn{
+	width: 100px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	}
+	#Photo1000Btn{
+	width: 100px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+
+	
+}
+#Photo44Btn{
+	width: 100px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+}
+#Photo33Btn{
+	width: 100px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+}
+#Photo22Btn{
+	width: 100px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+}
+#Photo11Btn{
+	width: 100px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+}
+#Photo45Btn{
+	width: 100px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+}
+#Photo99Btn{
+	width: 100px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+}
+
+#Photo129Btn{
+	width: 110px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	margin-top: 20px;"
+}
+#Photo1010Btn{
+	width: 110px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	margin-top: 20px;"
+}
+#Photo1111Btn{
+	width: 110px; 
+	height: auto; 
+	margin-right: -2px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	margin-top: 20px;"
+
+}	
+	
+	
+	.logo {
+	   max-width: 25%;	
+    top: 50px;
+    right  : 170px;
+	
+}
+.language-button {
+    right  :-5px;
+	  font-size: 8px; /* Еще меньший размер шрифта */
+     top: -15px;
+	  margin-bottom: -10px; /* Уменьшение отступа снизу, чтобы кнопка был ближе к кнопка  */ 
+}
+
+.button {
+	
+	   font-size: 8px; /* Еще меньший размер шрифта */
+    padding: 5px 10px; /* Уменьшение размера кнопки */
+	margin-right: 15px; /* Добавлен отступ справа */
+	  margin-bottom: -120px; /* Уменьшение отступа снизу, чтобы кнопка был ближе к меню  */ 
+        }
+		
+		
+		.menu button {
+    font-size: 8px;
+    margin-left: -15px; /* Сдвиг каждой кнопки вправо */
+    margin-right: 5px; /* Небольшое расстояние между кнопками */
+	 top: -30px;
+}
+.centered-image {
+    width: 70%; /* Заменяем максимальную ширину на конкретное значение, чтобы увеличить изображение */
+    margin-right: 60px;
+	 display: block; /* Убираем возможные пробелы вокруг изображения */
+    position: relative; /* Относительное позиционирование */
+    top: -70px; /* Сдвигаем изображение вверх, чтобы оно было ближе к меню */
+      margin-bottom: -110px; /* Уменьшение отступа снизу, чтобы текст был ближе к изображению */  
+		}
+	
+	
+	
+.logo-text {
+    font-size: 15px; /* Размер шрифта текста */
+    color: #AF9562; /* Цвет шрифта текста */
+	line-height: 1; /* Установить line-height для лучшего выравнивания */
+    margin-top: 10px; /* Смещение текста вверх, если нужно */
+	  margin-left: -175px; /* Отступ справа от логотипа */
+	   white-space: nowrap; /* Предотвращение переноса текста */
+	 
+}
+/* Стили для ссылок под текстом */
+.link-group {
+    margin-top: 185px; /* Небольшой отступ сверху для ссылок */
+    display: flex;
+    flex-direction: column; /* Расположение ссылок в столбик */
+    gap: 15px; /* Расстояние между ссылками */
+	 margin-left: -145px; /* Отступ справа от логотипа */
+	  white-space: nowrap; /* Предотвращение переноса текста */
+    align-items: flex-start; /* Выравнивание кнопок по левому краю */
+	
+	 
+}
+
+
+	/* Стили для текста "GALERIA" */
+.menu-item {
+    margin-left: -198px; /* Отступ справа от текста "NUESTRA EMPRESA" */
+    top: 15px; /* Смещение текста вверх (регулируйте по необходимости) */
+	  
+}
+ /* Стиль для текста "CONTACTOS" */
+.contact-text {
+    margin-left: -600px; /* Отступ справа от текста "NUESTRA EMPRESA" */
+    top: 20px; /* Смещение текста вверх (регулируйте по необходимости) */
+}
+
+
+/* Обертка для иконок */
+.wrapper {
+	margin-left: -140px; /* Отступ справа от текста "NUESTRA EMPRESA" */
+    top: 90px; /* Смещение текста вверх (регулируйте по необходимости) */
+}
+}
+
+/* Адаптивность для экранов больше  420px */
+@media only screen and (max-width: 420px) 
+{
+	#apartamentoBtn{
+		margin-right: -10px;
+		 font-size: 16px; /* Adjust the font size as needed */
+	}
+   #valenciBtn{
+	margin-right: 20px;
+		 font-size: 16px; /* Adjust the font size as needed */
+	}
+	 #cánovasBtn{
+	margin-right: -10px;
+		 font-size: 16px; /* Adjust the font size as needed */
+	}
+	
+	
+			#Photo88Btn{
+	width: 100px; 
+	height: auto; 
+	margin-right: 5px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	 flex-wrap: wrap; /* Позволяет изображениям переходить на следующую строку */
+	margin-top: 20px;
+	
+	}
+#Photo103Btn{
+	width: 100px; 
+	height: auto; 
+	margin-right: 5px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	 flex-wrap: wrap; /* Позволяет изображениям переходить на следующую строку */
+	margin-top: 20px;
+	}
+	#Photo66Btn{
+	width: 100px; 
+	height: auto; 
+	margin-right: 5px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	 flex-wrap: wrap; /* Позволяет изображениям переходить на следующую строку */
+	 margin-top: 15px;
+	}
+	#Photo101Btn{
+	width: 100px; 
+	height: auto; 
+	margin-right: 5px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	 flex-wrap: wrap; /* Позволяет изображениям переходить на следующую строку */
+	
+	}
+	#Photo100Btn{
+	width: 100px; 
+	height: auto; 
+	margin-right: 5px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	 flex-wrap: wrap; /* Позволяет изображениям переходить на следующую строку */
+	
+	}
+	#Photo55Btn{
+	width: 100px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	 flex-wrap: wrap; /* Позволяет изображениям переходить на следующую строку */
+	
+	}
+	#Photo451Btn{
+	width: 80px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	 flex-wrap: wrap; /* Позволяет изображениям переходить на следующую строку */
+	
+	}
+	
+	#Photo991Btn{
+	width: 80px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	 flex-wrap: wrap; /* Позволяет изображениям переходить на следующую строку */
+	 
+	}
+	
+	#Photo441Btn{
+	width: 80px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	 flex-wrap: wrap; /* Позволяет изображениям переходить на следующую строку */
+	
+	}
+	
+	#Photo4513Btn{
+	width: 80px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	 flex-wrap: wrap; /* Позволяет изображениям переходить на следующую строку */
+	 margin-top: -30px;"
+	}
+	
+	#Photo5333Btn{
+	width: 80px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	 flex-wrap: wrap; /* Позволяет изображениям переходить на следующую строку */
+	 margin-top: -30px;"
+	}
+	
+	#Photo6664Btn{
+	width: 80px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	 flex-wrap: wrap; /* Позволяет изображениям переходить на следующую строку */
+	 margin-top: -30px;"
+	}
+	
+	
+	
+	#Photo112Btn{
+	width: 110px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	 flex-wrap: wrap; /* Позволяет изображениям переходить на следующую строку */
+	 margin-top: -30px;"
+	}
+	#Photo110Btn{
+	width: 110px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	 flex-wrap: wrap; /* Позволяет изображениям переходить на следующую строку */
+	 margin-top: -30px;"
+	}
+	#Photo109Btn{
+	width: 110px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	margin-top: -40px;"
+	
+	}
+	#Photo108Btn{
+	width: 110px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+margin-top: -40px;"
+	}
+	#Photo1178Btn{
+	width: 80px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	}
+	#Photo1060Btn{
+	width: 80px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	}
+	#Photo1000Btn{
+	width: 80px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+
+	
+}
+#Photo44Btn{
+	width: 80px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+}
+#Photo33Btn{
+	width: 80px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+}
+#Photo22Btn{
+	width: 80px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+}
+#Photo11Btn{
+	width: 80px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+}
+#Photo45Btn{
+	width: 80px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+}
+#Photo99Btn{
+	width: 80px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+}
+
+#Photo129Btn{
+	width: 100px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	margin-top: 20px;"
+}
+#Photo1010Btn{
+	width: 100px; 
+	height: auto; 
+	margin-right: 10px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	margin-top: 20px;"
+}
+#Photo1111Btn{
+	width: 100px; 
+	height: auto; 
+	margin-right: -8px;
+	border-radius: 5px; /* Скругление углов (опционально) */
+	margin-top: 20px;"
+}
+	 /* Стиль для текста "CONTACTOS" */
+.contact-text {
+    margin-left: -650px; /* Отступ справа от текста "NUESTRA EMPRESA" */
+    top: 20px; /* Смещение текста вверх (регулируйте по необходимости) */
+}
+
+
+/* Обертка для иконок */
+.wrapper {
+	margin-left: -70px; /* Отступ справа от текста "NUESTRA EMPRESA" */
+    top: 50px; /* Смещение текста вверх (регулируйте по необходимости) */
+}
+	
+			/* Стили для текста "GALERIA" */
+.menu-item {
+    margin-left: -185px; /* Отступ справа от текста "NUESTRA EMPRESA" */
+    top: 15px; /* Смещение текста вверх (регулируйте по необходимости) */
+	  
+
+}
+	.menu button {
+    font-size: 8px;
+    margin-left: -5px; /* Сдвиг каждой кнопки вправо */
+    margin-right: -8px; /* Небольшое расстояние между кнопками */
+	 top: -30px;
+}
+
+}
+
+   	/* Адаптивность для экранов больше  400px */
+@media only screen and (max-width: 400px) 
+{
+		.logo {
+	   max-width: 23%;	
+    top: 50px;
+    right  : 150px;
+	
+}
+.language-button {
+    right  : -15px;
+	  font-size: 6px; /* Еще меньший размер шрифта */
+     top: -35px;
+	  margin-bottom: -20px; /* Уменьшение отступа снизу, чтобы кнопка был ближе к кнопка  */ 
+}
+
+.button {
+	
+	   font-size: 8px; /* Еще меньший размер шрифта */
+    padding: 5px 10px; /* Уменьшение размера кнопки */
+	margin-right: -1px; /* Добавлен отступ справа */
+	  margin-bottom: -100px; /* Уменьшение отступа снизу, чтобы кнопка был ближе к меню  */ 
+        }
+		
+		
+		.menu button {
+    font-size: 7px;
+    margin-left: -5px; /* Сдвиг каждой кнопки вправо */
+    margin-right: -8px; /* Небольшое расстояние между кнопками */
+	 top: -30px;
+}
+.centered-image {
+    width: 70%; /* Заменяем максимальную ширину на конкретное значение, чтобы увеличить изображение */
+    margin-right: 40px;
+	 display: block; /* Убираем возможные пробелы вокруг изображения */
+    position: relative; /* Относительное позиционирование */
+    top: -70px; /* Сдвигаем изображение вверх, чтобы оно было ближе к меню */
+      margin-bottom: -110px; /* Уменьшение отступа снизу, чтобы текст был ближе к изображению */  
+		}
+	.menu-item {
+    margin-left: -160px; /* Отступ справа от текста "NUESTRA EMPRESA" */
+    top: 15px; /* Смещение текста вверх (регулируйте по необходимости) */
+
+}
+	}
+	
+	
+		   	/* Адаптивность для экранов больше  380px */
+@media only screen and (max-width: 380px) 
+{
+		.menu button {
+    font-size: 7px;
+    margin-left: -5px; /* Сдвиг каждой кнопки вправо */
+    margin-right: -10px; /* Небольшое расстояние между кнопками */
+	 top: -30px;
+}
+.menu-item {
+    margin-left: -145px; /* Отступ справа от текста "NUESTRA EMPRESA" */
+    top: 15px; /* Смещение текста вверх (регулируйте по необходимости) */
+
+}
+	}
+
+	   	/* Адаптивность для экранов больше  350px */
+@media only screen and (max-width: 360px) 
+{
+	
+	.logo {
+	   width: 90px;	
+    top: 55px;
+   left  : 120px;
+	
+}
+.language-button {
+    right  : -10px;
+	  font-size: 6px; /* Еще меньший размер шрифта */
+     top: -30px;
+	  margin-bottom: 10px; /* Уменьшение отступа снизу, чтобы кнопка был ближе к кнопка  */ 
+}
+
+.button {
+	
+	   font-size: 6px; /* Еще меньший размер шрифта */
+    padding: 5px 10px; /* Уменьшение размера кнопки */
+	margin-right: 10px; /* Добавлен отступ справа */
+	  margin-bottom: -80px; /* Уменьшение отступа снизу, чтобы кнопка был ближе к меню  */ 
+        }
+		
+		.menu button {
+    font-size: 6px;
+    margin-left: -5px; /* Сдвиг каждой кнопки вправо */
+    margin-right: 10px; /* Небольшое расстояние между кнопками */
+	 margin-bottom: 20px; /* Уменьшение отступа снизу, чтобы меню был ближе к кнопка   */ 
+}
+.centered-image {
+    width: 70%; /* Заменяем максимальную ширину на конкретное значение, чтобы увеличить изображение */
+    margin-right: 40px;
+	}
+	.menu-item {
+    margin-left: -100px; /* Отступ справа от текста "NUESTRA EMPRESA" */
+    top: 15px; /* Смещение текста вверх (регулируйте по необходимости) */
+
+}
+.gallery-button {
+	white-space: nowrap; /* Предотвращение переноса текста */
+	font-size: 12px;
+	 }
+	 	 /* Стиль для текста "CONTACTOS" */
+.contact-text {
+    margin-left: -610px; /* Отступ справа от текста "NUESTRA EMPRESA" */
+    top: 20px; /* Смещение текста вверх (регулируйте по необходимости) */
+}
+
+
+/* Обертка для иконок */
+.wrapper {
+	margin-left: -140px; /* Отступ справа от текста "NUESTRA EMPRESA" */
+    top: 90px; /* Смещение текста вверх (регулируйте по необходимости) */
+}
+.nav-link {
+	font-size: 12px;
+	  }
+	  }
